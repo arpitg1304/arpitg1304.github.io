@@ -84,7 +84,7 @@ header {
     text-align: center;
     color: #fff;
     /* background: #808080; */
-    background-image: url("img/rbe3.jpg");
+    background-image: url("img/rbe4.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -119,7 +119,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .name {
-        margin-top: 260px;
+        margin-top: 300px;
         font-size: 4.2em;
         /* color: #2c3e50; */
     }
