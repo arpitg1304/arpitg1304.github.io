@@ -1,0 +1,13 @@
+---
+title: Face Recognition using Eigenface and Fisherface algorithms
+short-title: Eigenface Face Detection
+layout: default
+modal-id: 7
+date: 2014-07-14
+img: eigenface.png
+alt: image-alt
+project-date: Oct 2017 - Nov 2017
+category: Computer Vision, Machine Learning, Principal component analysis
+description: ~Developed Eigenface and Fisherface algorithms from scratch in MATLAB for face Recognition<br><br>~Implemented Principal Component Analysis using Singular Value Decomposition
+
+---
