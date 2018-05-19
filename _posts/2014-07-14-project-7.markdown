@@ -1,0 +1,13 @@
+---
+title: Scene Recognition using Bag of Words and Nearest Neighbor Classifier, Support Vector Machine
+short-title: Scene Recognition - Bag of Words
+layout: default
+modal-id: 6
+date: 2014-07-14
+img: scene.png
+alt: image-alt
+project-date: Oct 2017 - Nov 2017
+category: Computer Vision, Nearest neighbor classifier, Support Vector Machine, Bag of Words
+description: ~Implemented Bag of Words feature detector and Nearest Neighbour Classifier from scratch for Scene Recognition.<br><br>~Achieved SNV level accuracy with hyperparameters tuning
+
+---

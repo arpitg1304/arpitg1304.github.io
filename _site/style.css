@@ -43,6 +43,17 @@ h6 {
     font-weight: 700;
 }
 
+.project_title {
+  color: #2c3e50;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none !important;
+}
+
+.project_title:hover {
+  text-decoration: none;
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -56,7 +67,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    /* content: "\f005"; */
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -94,6 +105,20 @@ header {
     background-image: url("img/rbe4.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    height: 90vh;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+#portfolio {
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #portfolio, header {
+    height: auto;
+  }
+
+
 }
 
 header .container {
@@ -137,6 +162,17 @@ header .intro-text .skills {
     }
 }
 
+/* @media(max-width:420px) {
+    header .intro-text{
+        display: none;
+        /* color: #2c3e50; */
+    }
+    header .intro-text .star-light {
+      display: none;
+    }
+
+} */
+
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
@@ -172,7 +208,12 @@ header .intro-text .skills {
 }
 
 .navbar .navbar-nav {
+    font-size: 20px;
     letter-spacing: 1px;
+}
+
+.navbar-brand {
+  font-size: 25px;
 }
 
 .navbar .navbar-nav li a:focus {
@@ -227,10 +268,10 @@ section.success h2 {
 
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 230px;
     opacity: 0;
-    background: rgba(24,288,156,.9);
+    background: rgba(211,211,211,.5);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -417,7 +458,7 @@ footer .footer-below {
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .portfolio-modal .modal-content img {
@@ -477,4 +518,15 @@ footer .footer-below {
 /* Custom CSS */
 .pro-img {
   border-radius: 50%;
+}
+
+.intro-img {
+  height: 230px;
+  width: 350px;
+  border:0.5px solid #021a40;
+}
+
+.img-abt {
+  width: 150px !important;
+  height: 150px !important;
 }

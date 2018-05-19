@@ -1,12 +1,13 @@
 ---
+title: Autonomous Robotic capture of flying objects using visual servoing
+short-title: Visual Servoing
 layout: default
 modal-id: 3
 date: 2014-07-16
-img: circus.png
+img: visual_servoing.gif
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+project-date: Feb 2018 - Present
+category: Robot Control, Visual Servoing, Object Tracking, Computer Vision
+description: ~Developed simulation environment in V-REP for ABB IRB 140 Robot using ROS<br><br>~Used Microsoft Kinect to predict object’s trajectory using OpenCV and curve fitting<br><br>~Solved the problem of slow data acquisition using ROS and achieved real-time performance<br><br>~Implemented PID controller for 6-DOF robot arm to capture the objects in flight through visual feedback
 
 ---

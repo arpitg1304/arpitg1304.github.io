@@ -1,12 +1,13 @@
 ---
+title: Haptic Virtual Interaction with the Da Vinci Surgical Robot
+short-title: Haptics with Da Vinci Robot
 layout: default
 modal-id: 4
 date: 2014-07-15
-img: game.png
+img: haptics1.gif
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+project-date: Feb 2017 - May 2018
+category: Haptics, Surgical Simulation, Robot Dynamics, Bullet Physics
+description: ~Developed surgical simulator with haptic feedback using CHAI3D, OpenGL and Bullet Physics engine<br><br>~Built ROS interface for da vinci and Geomagic touch haptic device to interact with the surgical environment<br><br>~Developed an incision practice module and integrated Novint Falcon haptic device for surgical practice in simulation. Developed master-slave teleoperation module for surgical training in simulation
 
 ---
