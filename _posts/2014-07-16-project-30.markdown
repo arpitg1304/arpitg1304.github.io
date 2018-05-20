@@ -1,0 +1,14 @@
+---
+title: Coursera Deep Learning Specialization
+short-title: Coursera Deep Learning
+layout: default
+modal-id: 3
+code_link: https://github.com/arpitg1304/Coursera-Deep-Learning
+date: 2014-07-16
+img: coursera1.png
+alt: image-alt
+project-date: Dec 2017 - Present
+category: Deep learning, Computer Vision
+description: ~Successfully completed first 2 courses -  Neural Networks and Deep Learning, Improving Deep Neural Networks<br><br>~Implemented shallow and deep Neural Networks from scratch<br><br>~Learnt to model cost functions, back propagation and various activation functions(sigmoid, ReLU, softmax)<br><br>~Learnt and implemented regularization(L2, dropout), and optimizers(ADAM, RMSProp, etc)
+
+---

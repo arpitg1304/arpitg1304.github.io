@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2018-05-20T03:08:29-04:00</updated>
+  <updated>2018-05-20T04:06:46-04:00</updated>
   <id>http://localhost:4000/</id>
 
   
@@ -75,6 +75,40 @@
 
       
         <category term="Deep Learning, Computer Vision" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Coursera Deep Learning Specialization</title>
+      <link href="http://localhost:4000/deep%20learning,%20computer%20vision/2014/07/16/project-30/" rel="alternate" type="text/html" title="Coursera Deep Learning Specialization" />
+      <published>2014-07-16T00:00:00-04:00</published>
+      <updated>2014-07-16T00:00:00-04:00</updated>
+      <id>http://localhost:4000/deep%20learning,%20computer%20vision/2014/07/16/project-30</id>
+      <content type="html" xml:base="http://localhost:4000/deep%20learning,%20computer%20vision/2014/07/16/project-30/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Deep learning, Computer Vision" />
       
 
       
