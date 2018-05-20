@@ -2,7 +2,7 @@
 title: Coursera Deep Learning Specialization
 short-title: Coursera Deep Learning
 layout: default
-modal-id: 3
+modal-id: 8
 code_link: https://github.com/arpitg1304/Coursera-Deep-Learning
 date: 2014-07-16
 img: coursera1.png
