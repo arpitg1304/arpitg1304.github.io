@@ -3,6 +3,7 @@ title: Face Recognition using Eigenface and Fisherface algorithms
 short-title: Eigenface Face Detection
 layout: default
 modal-id: 7
+code_link: https://github.com/arpitg1304/face-recognition
 date: 2014-07-14
 img: eigenface.png
 alt: image-alt

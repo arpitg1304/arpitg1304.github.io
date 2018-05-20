@@ -3,6 +3,7 @@ title: Autonomous Robotic capture of flying objects using visual servoing
 short-title: Visual Servoing
 layout: default
 modal-id: 3
+code_link: https://github.com/arpitg1304/ObjectCapture
 date: 2014-07-16
 img: visual_servoing.gif
 alt: image-alt

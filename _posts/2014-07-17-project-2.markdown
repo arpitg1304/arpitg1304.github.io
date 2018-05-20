@@ -2,6 +2,7 @@
 title: Real Time Vehicle Detection for Self-Driving Car using CNN
 short-title: Vehicle Detection
 layout: default
+code_link: https://github.com/arpitg1304/RBE-549-Computer-Vision-Project
 modal-id: 2
 date: 2014-07-17
 img: vehicle_detect.gif

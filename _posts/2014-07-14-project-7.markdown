@@ -3,6 +3,7 @@ title: Scene Recognition using Bag of Words and Nearest Neighbor Classifier, Sup
 short-title: Scene Recognition - Bag of Words
 layout: default
 modal-id: 6
+code_link: https://github.com/arpitg1304/scene-recognition
 date: 2014-07-14
 img: scene.png
 alt: image-alt

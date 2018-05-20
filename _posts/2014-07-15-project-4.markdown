@@ -4,6 +4,7 @@ short-title: Haptics with Da Vinci Robot
 layout: default
 modal-id: 4
 date: 2014-07-15
+code_link: https://github.com/arpitg1304/DVRK_haptic
 img: haptics1.gif
 alt: image-alt
 project-date: Feb 2017 - May 2018
