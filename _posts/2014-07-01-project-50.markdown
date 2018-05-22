@@ -1,0 +1,14 @@
+---
+title: Teleoperation of A Robotic Arm Using IMU and ROS
+short-title: IMU-ROS Teleoperation
+layout: default
+modal-id: 9
+code_link: https://github.com/dpwivagg/imu_teleop
+date: 2014-07-14
+img: imu.gif
+alt: image-alt
+project-date: Nov 2017 - Dec 2017
+category: Robotics, Arduino, IMU sensor, Teleoperation
+description: ~Used Arduino-ROS bridge to develop simulation environment in ROS-Gazebo<br><br>~Successfully implemented teleoperation module in C++, ROS and python by reading IMU sensor data from Arduino and transferring movement to the Robot arm in simulation
+
+---

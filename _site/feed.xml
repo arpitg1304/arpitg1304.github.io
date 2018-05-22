@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.8.1">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2018-05-20T14:28:35-04:00</updated>
+  <updated>2018-05-21T20:23:29-04:00</updated>
   <id>http://localhost:4000/</id>
 
   
@@ -279,6 +279,40 @@
 
       
         <category term="Computer Vision, Machine Learning, Principal component analysis" />
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Teleoperation of A Robotic Arm Using IMU and ROS</title>
+      <link href="http://localhost:4000/robotics,%20arduino,%20imu%20sensor,%20teleoperation/2014/07/14/project-50/" rel="alternate" type="text/html" title="Teleoperation of A Robotic Arm Using IMU and ROS" />
+      <published>2014-07-14T00:00:00-04:00</published>
+      <updated>2014-07-14T00:00:00-04:00</updated>
+      <id>http://localhost:4000/robotics,%20arduino,%20imu%20sensor,%20teleoperation/2014/07/14/project-50</id>
+      <content type="html" xml:base="http://localhost:4000/robotics,%20arduino,%20imu%20sensor,%20teleoperation/2014/07/14/project-50/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+        <category term="Robotics, Arduino, IMU sensor, Teleoperation" />
       
 
       
