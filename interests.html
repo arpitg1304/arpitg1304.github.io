@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Writing · Arpit Gupta</title>
-  <meta name="description" content="Writing on embodied AI and robot data, plus the toolbox.">
+  <title>Interests &amp; Writing · Arpit Gupta</title>
+  <meta name="description" content="Agentic robotics, System 0/1/2 control stacks, data scaling for robot learning, embodied foundation models, and writing on embodied AI.">
   <meta name="author" content="Arpit Gupta">
   <meta name="theme-color" content="#fafaf8">
-  <link rel="canonical" href="https://arpitg1304.github.io/writing.html">
+  <link rel="canonical" href="https://arpitg1304.github.io/interests.html">
 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://arpitg1304.github.io/writing.html">
-  <meta property="og:title" content="Writing · Arpit Gupta">
-  <meta property="og:description" content="Writing on embodied AI and robot data, plus the toolbox.">
+  <meta property="og:url" content="https://arpitg1304.github.io/interests.html">
+  <meta property="og:title" content="Interests &amp; Writing · Arpit Gupta">
+  <meta property="og:description" content="Agentic robotics, System 0/1/2 control stacks, data scaling for robot learning, embodied foundation models, and writing on embodied AI.">
   <meta property="og:image" content="https://arpitg1304.github.io/assets/img/og.png">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -45,7 +45,7 @@
   }
   </script>
 </head>
-<body class="page page--writing" id="top">
+<body class="page page--interests" id="top">
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="nav" id="nav">
@@ -60,7 +60,7 @@
         <a href="stack.html">Stack</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
-        <a href="writing.html" class="is-active" aria-current="page">Writing</a>
+        <a href="interests.html" class="is-active" aria-current="page">Interests</a>
       </nav>
       <div class="nav__actions">
         <button class="icon-btn" id="themeToggle" aria-label="Toggle color theme">
@@ -76,10 +76,60 @@
   </header>
 
   <main id="main">
-    <section class="section" id="writing">
+    <section class="section" id="interests">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker mono">06 / Writing &amp; toolbox</p>
+          <p class="kicker mono">06 / Interests</p>
+          <h2>What I'm thinking about.</h2>
+          <p class="section__lede">Where robotics is heading next, and the questions I keep coming back to.</p>
+        </header>
+
+        <div class="ints">
+          <article class="int int--focus reveal">
+            <span class="int__tag mono">Current focus</span>
+            <h3>Agentic robotics</h3>
+            <p>Robots as agents, not just policies. A reasoning model plans, calls skills and tools (perception, navigation, manipulation primitives, ROS services), checks its own progress and recovers when things go wrong. Where do agent loops make robots more capable, and where do they just add latency?</p>
+            <ol class="trace mono" aria-label="Example agent trace">
+              <li><span class="trace__k">goal</span><span>“put the red cup in the sink”</span></li>
+              <li><span class="trace__k">plan</span><span>find cup → grasp → place in sink</span></li>
+              <li><span class="trace__k">call</span><span>detect(“red cup”)</span><span class="trace__ok">✓</span></li>
+              <li><span class="trace__k">call</span><span>grasp(cup_1)</span><span class="trace__bad">✗ slipped</span></li>
+              <li><span class="trace__k">verify</span><span>re-plan grasp from new view</span><span class="trace__ok">✓</span></li>
+              <li><span class="trace__k">call</span><span>place(cup_1, sink)</span><span class="trace__ok">✓</span></li>
+            </ol>
+          </article>
+
+          <article class="int int--focus reveal">
+            <span class="int__tag mono">Current focus</span>
+            <h3>System 0 / 1 / 2</h3>
+            <p>A layered control stack built on fast and slow thinking. The interesting questions are at the seams: what each layer learns, how often it runs and what data it needs.</p>
+            <ol class="sys" aria-label="Layers of the control stack">
+              <li><span class="sys__n mono">S2</span><span class="sys__what"><b>Reason &amp; plan</b><span>VLM / LLM</span></span><span class="sys__bar"><i style="width:18%"></i></span><span class="sys__hz mono">~1 Hz</span></li>
+              <li><span class="sys__n mono">S1</span><span class="sys__what"><b>See &amp; act</b><span>visuomotor policy (VLA)</span></span><span class="sys__bar"><i style="width:55%"></i></span><span class="sys__hz mono">~10–100 Hz</span></li>
+              <li><span class="sys__n mono">S0</span><span class="sys__what"><b>React &amp; stabilize</b><span>low-level / whole-body control</span></span><span class="sys__bar"><i style="width:100%"></i></span><span class="sys__hz mono">~1 kHz</span></li>
+            </ol>
+          </article>
+
+          <article class="int reveal">
+            <h3>Data scaling for robot learning</h3>
+            <p>Which data actually moves the metrics, how performance scales with it, and where the next labeled hour should go.</p>
+          </article>
+          <article class="int reveal">
+            <h3>Embodied foundation models</h3>
+            <p>VLAs, world models, action chunking and flow-matching policies, and the data and infrastructure they really need.</p>
+          </article>
+          <article class="int reveal">
+            <h3>Learning from humans</h3>
+            <p>Egocentric and third-person human video as robot data, and how to bridge the embodiment gap.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="writing">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">Writing &amp; toolbox</p>
           <h2>Thinking in public about embodied AI.</h2>
           <p class="section__lede">I write on LinkedIn about where robotics is headed: the data gap, VLAs, sim versus real, and what it takes to build robots that learn.</p>
         </header>
