@@ -87,7 +87,7 @@
             I work across the whole robot: sensors and calibration, ROS software and perception, the learned
             policies on top, and the platform and infrastructure robot learning runs on. That's meant
             <strong>1,000+ deployed warehouse robots</strong>, VLA work on <strong>Atlas</strong> and
-            <strong>Spot</strong> at Boston Dynamics, and now autonomy at Cruise.
+            <strong>Spot</strong> at Boston Dynamics, and now hill-climbing onboard VLM/VLA models at Cruise.
           </p>
           <div class="hero__cta reveal">
             <a class="btn btn--primary" href="#projects">See the work <span aria-hidden="true">→</span></a>
@@ -154,7 +154,7 @@
             <ul class="layer__ev">
               <li>Multimodal VLA training data for Atlas and Spot (RGB-D, proprioception, force/torque)</li>
               <li>YOLO and U-Net perception for people, robots and forklifts on Fetch and 6RS fleets</li>
-              <li>VLM scene understanding over fleet logs at Cruise</li>
+              <li>Onboard VLM/VLA hill-climbing at Cruise: data mixes, ablations, agentic labeling</li>
             </ul>
           </li>
           <li class="layer reveal">
@@ -598,17 +598,18 @@
           <li class="job reveal is-open">
             <button class="job__head" aria-expanded="true">
               <span class="job__when mono">Apr 2026 – now</span>
-              <span class="job__who"><b>Cruise · General Motors</b><span>Senior AI Scientist · Mountain View, CA</span></span>
+              <span class="job__who"><b>Cruise · General Motors</b><span>Senior AI Scientist · Embodied AI, onboard VLM/VLA</span></span>
               <span class="job__chev" aria-hidden="true"></span>
             </button>
             <div class="job__body"><div class="job__body-inner">
-              <p class="job__sum">Scene understanding for on-board autonomy: mining rare, safety-critical moments from fleet logs and turning them into VLM/VLA training data.</p>
+              <p class="job__sum">Hill-climbing onboard VLM/VLA models: finding the data that moves the metrics, and proving it with ablations.</p>
               <ul>
-                <li>Built heuristic-driven mining pipelines that surface rare and safety-critical driving scenarios from large-scale fleet logs.</li>
-                <li>Enriched mined clips with the Cosmos-3 VLM to auto-generate semantic captions and scene metadata for downstream training.</li>
-                <li>Curated mid-training and fine-tuning datasets for VLM/VLA research, defining sampling strategies, annotation schemas and quality filters that expanded scenario coverage.</li>
+                <li>Drive performance improvements for onboard VLM/VLA models by closing the loop between data and evaluation: mine, label, train, ablate, repeat.</li>
+                <li>Mine rare and safety-critical scenarios from large-scale fleet logs with several complementary approaches, from heuristic pipelines to VLM-generated (Cosmos-3) captions and scene metadata.</li>
+                <li>Build agentic labeling workflows that turn mined clips into training-ready supervision.</li>
+                <li>Train models across ablations and data mixes for mid-training and fine-tuning, defining the sampling strategies, annotation schemas and quality filters behind them.</li>
               </ul>
-              <div class="tags"><span>VLM / VLA</span><span>Cosmos</span><span>Data mining</span><span>Autonomy</span></div>
+              <div class="tags"><span>Onboard VLM / VLA</span><span>Data mixes &amp; ablations</span><span>Agentic labeling</span><span>Data mining</span><span>Cosmos</span></div>
             </div></div>
           </li>
 
