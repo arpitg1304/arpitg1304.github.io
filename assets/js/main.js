@@ -16,7 +16,7 @@
     const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
     root.setAttribute('data-theme', next);
     store.set('theme', next);
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'light' ? '#f5f6f8' : '#07090d');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'light' ? '#fafaf8' : '#0b0d10');
     document.dispatchEvent(new Event('themechange'));
   });
 
