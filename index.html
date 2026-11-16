@@ -75,57 +75,27 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="intro">
-      <div class="hero__grid wrap">
-        <div class="hero__copy">
-          <p class="eyebrow reveal"><span class="dot dot--live"></span>Full-stack robotics engineer · Senior AI Scientist at Cruise (GM)</p>
-          <h1 class="hero__title reveal">Full-stack robotics, from <span class="hl">sensor to policy</span>.</h1>
-          <p class="hero__lede reveal">
-            I work across the whole robot: sensors and calibration, ROS software and perception, the learned
-            policies on top, and the platform and infrastructure robot learning runs on. That's meant
-            <strong>1,000+ deployed warehouse robots</strong>, leading data infrastructure and platform
-            work for robot learning at Boston Dynamics, and now hill-climbing onboard VLM/VLA models at Cruise.
-          </p>
-          <div class="hero__cta reveal">
-            <a class="btn btn--primary" href="flywheel.html">Start with the flywheel <span aria-hidden="true">→</span></a>
-            <a class="btn" href="research.html">CoRL 2026 paper</a>
-          </div>
-          <ul class="hero__social reveal" aria-label="Profiles">
-            <li><a href="https://github.com/arpitg1304" target="_blank" rel="noopener">GitHub ↗</a></li>
-            <li><a href="https://www.linkedin.com/in/arpitgupta/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-            <li><a href="https://openreview.net/forum?id=Vv1WXMkSTD" target="_blank" rel="noopener">OpenReview ↗</a></li>
-          </ul>
-        </div>
+  <main id="main" class="landing">
+    <canvas id="bgArm" class="bg-arm" aria-hidden="true"></canvas>
 
-        <div class="hero__viz reveal">
-          <div class="viz">
-            <div class="viz__bar">
-              <span class="mono">sim://sort_cell</span>
-              <span class="viz__rec mono"><span class="dot dot--rec"></span>REC <span id="bufSec">0.0s buffer</span></span>
-            </div>
-            <canvas id="armCanvas" tabindex="0" role="application" aria-label="Interactive robot arm sorting blocks. Move the pointer or use arrow keys to teleoperate, click or press Space to grip, B adds a block, R replays the last 8 seconds."></canvas>
-            <div class="viz__hud mono" aria-hidden="true">
-              <div><span>q₁</span><b id="q1">0.00</b></div>
-              <div><span>q₂</span><b id="q2">0.00</b></div>
-              <div><span>ee</span><b id="ee">0.00, 0.00</b></div>
-              <div><span>episodes</span><b id="eps">0</b></div>
-              <div><span>success</span><b id="sr">—</b></div>
-              <div><span>mode</span><b id="mode">auto</b></div>
-            </div>
-            <div class="viz__ctrl">
-              <p class="viz__hint mono">move to teleop · click to grip<span class="keys"> · keys ←↑→↓ ␣</span></p>
-              <div class="viz__btns">
-                <button class="vbtn mono" id="armAdd" type="button" title="Add a block (B)">+ block</button>
-                <button class="vbtn mono" id="armReplay" type="button" title="Replay the last 8 seconds (R)">⟲ replay</button>
-              </div>
-            </div>
-          </div>
+    <section class="landing__hero wrap">
+      <div class="landing__copy">
+        <p class="eyebrow reveal"><span class="dot dot--live"></span>Full-stack robotics engineer · Senior AI Scientist at Cruise (GM)</p>
+        <h1 class="hero__title reveal">Full-stack robotics, from <span class="hl">sensor to policy</span>.</h1>
+        <p class="hero__lede reveal">
+          I work across the whole robot: sensors and calibration, ROS software and perception, the learned
+          policies on top, and the platform robot learning runs on. From <strong>1,000+ deployed warehouse robots</strong>
+          and data infrastructure at Boston Dynamics to onboard VLM/VLA models at Cruise.
+        </p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="flywheel.html">Start with the flywheel <span aria-hidden="true">→</span></a>
+          <a class="btn" href="research.html">CoRL 2026 paper</a>
         </div>
       </div>
+    </section>
 
-      <div class="wrap">
-        <nav class="tabs reveal" aria-label="Explore">
+    <div class="wrap">
+      <nav class="tabs reveal" aria-label="Explore">
           <a href="flywheel.html"><span class="mono">01</span><b>Flywheel</b><span>Every failure makes the next policy better</span></a>
           <a href="experience.html"><span class="mono">02</span><b>Experience</b><span>Cruise, Boston Dynamics, Zebra, 6 River Systems</span></a>
           <a href="stack.html"><span class="mono">03</span><b>Stack</b><span>From sensors to platform, layer by layer</span></a>
@@ -133,32 +103,21 @@
           <a href="projects.html"><span class="mono">05</span><b>Projects</b><span>Forge, ROS Time Machine, agent skills…</span></a>
           <a href="writing.html"><span class="mono">06</span><b>Writing</b><span>Embodied AI, in public</span></a>
         </nav>
-      </div>
-    </section>
+    </div>
 
-    <section class="section contact" id="contact">
-      <div class="wrap contact__inner reveal">
-        <p class="kicker mono">Contact</p>
-        <h2 class="contact__title">Building robots?<br><span class="hl">Let's talk shop.</span></h2>
-        <p class="section__lede">Robot software, perception, robot learning or the platform underneath, plus open-source collaboration and speaking.</p>
-        <div class="contact__cta">
-          <a class="btn btn--primary btn--lg" href="mailto:arpit.wpi@gmail.com">arpit.wpi@gmail.com</a>
-          <a class="btn btn--lg" href="https://www.linkedin.com/in/arpitgupta/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a class="btn btn--lg" href="https://github.com/arpitg1304" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-      </div>
-    </section>
+    <div class="wrap landing__foot" id="contact">
+      <p class="landing__contact">
+        <span class="mono">Get in touch</span>
+        <a href="mailto:arpit.wpi@gmail.com">arpit.wpi@gmail.com</a>
+        <a href="https://www.linkedin.com/in/arpitgupta/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/arpitg1304" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://openreview.net/forum?id=Vv1WXMkSTD" target="_blank" rel="noopener">OpenReview ↗</a>
+      </p>
+      <p class="landing__meta mono">© <span id="year">2026</span> · Boston, MA</p>
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer__inner mono">
-      <span>© <span id="year">2026</span> Arpit Gupta</span>
-      <span class="muted">Boston, MA · hand-built, no frameworks</span>
-      <a href="#top">back to top ↑</a>
-    </div>
-  </footer>
-
   <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/hero.js" defer></script>
+  <script src="assets/js/arm-bg.js" defer></script>
 </body>
 </html>
