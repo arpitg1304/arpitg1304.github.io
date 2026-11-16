@@ -179,48 +179,191 @@
       </div>
     </section>
 
-    <!-- ============ LOOP / LIFECYCLE ============ -->
-    <section class="section section--alt" id="stack">
+    <!-- ============ FLYWHEEL ============ -->
+    <section class="section section--alt" id="flywheel">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker mono">02 / The robot-learning loop</p>
-          <h2>From the robot's ROS graph to the training loop, and back.</h2>
-          <p class="section__lede">Robot learning is a systems problem. My open-source tools each cover one stage of the loop, the same problems I work on at fleet scale. Hover over a stage to see its tools.</p>
+          <p class="kicker mono">02 / The flywheel</p>
+          <h2>Every failure in the field makes the next policy better.</h2>
+          <p class="section__lede">This is the loop I build toward, with one of my open-source tools at each step. A deployed robot slips. ROS Time Machine and a VLM catch it. Forge and Anvil turn it into clean training data. Armature tests the new candidate. Anvil and an agent with Robotics Agent Skills ship it back to the fleet.</p>
         </header>
 
-        <ol class="pipeline reveal" id="pipeline">
-          <li class="stage" data-stage="capture">
-            <span class="stage__n mono">01</span>
-            <h3>Capture on-robot</h3>
-            <p>Record the seconds before the moment that matters, and generate demonstrations in sim.</p>
-            <ul class="stage__tools"><li><a href="#p-rtm">ROS Time Machine</a></li><li><a href="#p-armature">Armature</a></li></ul>
-          </li>
-          <li class="stage" data-stage="validate">
-            <span class="stage__n mono">02</span>
-            <h3>Validate</h3>
-            <p>Catch scene drift and bad demos before they end up in the dataset.</p>
-            <ul class="stage__tools"><li><a href="#p-anvil">Anvil</a></li><li><a href="#p-forge">Forge quality</a></li></ul>
-          </li>
-          <li class="stage" data-stage="convert">
-            <span class="stage__n mono">03</span>
-            <h3>Convert &amp; catalog</h3>
-            <p>Read any format, write any format, and index every episode in a queryable catalog.</p>
-            <ul class="stage__tools"><li><a href="#p-forge">Forge</a></li></ul>
-          </li>
-          <li class="stage" data-stage="curate">
-            <span class="stage__n mono">04</span>
-            <h3>Curate</h3>
-            <p>Train on 10K diverse episodes instead of 50K random ones.</p>
-            <ul class="stage__tools"><li><a href="#p-tessera">Tessera</a></li><li><a href="#p-forge">Forge Studio</a></li></ul>
-          </li>
-          <li class="stage" data-stage="train">
-            <span class="stage__n mono">05</span>
-            <h3>Load &amp; train</h3>
-            <p>Episode-aware video loading, plus measuring where training time actually goes.</p>
-            <ul class="stage__tools"><li><a href="#research">data-core-rs (CoRL)</a></li><li><a href="#p-frameforge">frameforge</a></li></ul>
-          </li>
-        </ol>
-        <p class="pipeline__foot mono reveal"><span class="pill">across every stage</span> <a href="#p-skills">Robotics Agent Skills</a> teach AI coding agents to write production-grade ROS code.</p>
+        <div class="fw reveal" id="fw">
+          <div class="fw__kpi mono" aria-hidden="true">fleet success <b id="fwKpiM">72%</b> · policy <b id="fwVerM">v1.0</b></div>
+          <svg class="fw__svg" id="fwSvg" viewBox="0 0 1200 720" role="img" aria-labelledby="fwTitle fwDesc">
+            <title id="fwTitle">Robot learning flywheel</title>
+            <desc id="fwDesc">An animated loop of six stations. Deploy: a robot arm on the fleet drops a cup. Capture: ROS Time Machine and a VLM save the clip around the failure. Curate: Forge scores and dedupes episodes and Anvil rejects a drifted session. Train: fine-tune on base plus field data. Evaluate: Armature runs seeded sim trials. Ship: Anvil checks the cell and an AI agent with robotics skills generates ROS 2 bringup, then the policy ships and fleet success rises.</desc>
+            <defs>
+              <clipPath id="fwBufClip"><rect x="16" y="90" width="298" height="54" rx="6"/></clipPath>
+              <filter id="fwGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+            </defs>
+
+            <!-- Track -->
+            <path class="fw-track" id="fwTrack" d="M 225 270 H 975 A 100 100 0 0 1 975 470 H 225 A 100 100 0 0 1 225 270 Z"/>
+            <path class="fw-prog" id="fwProg" d="M 225 270 H 975 A 100 100 0 0 1 975 470 H 225 A 100 100 0 0 1 225 270 Z"/>
+            <g class="fw-chev">
+              <path d="M408 264 l8 6 -8 6"/><path d="M783 264 l8 6 -8 6"/>
+              <path d="M1075 366 l6 8 6 -8"/>
+              <path d="M792 464 l-8 6 8 6"/><path d="M417 464 l-8 6 8 6"/>
+              <path d="M119 374 l6 -8 6 8"/>
+            </g>
+
+            <!-- Connectors + anchors -->
+            <g class="fw-conn">
+              <line x1="225" y1="240" x2="225" y2="270"/><line x1="600" y1="240" x2="600" y2="270"/><line x1="975" y1="240" x2="975" y2="270"/>
+              <line x1="975" y1="470" x2="975" y2="500"/><line x1="600" y1="470" x2="600" y2="500"/><line x1="225" y1="470" x2="225" y2="500"/>
+            </g>
+            <g class="fw-anchors">
+              <circle data-i="0" cx="225" cy="270" r="6"/><circle data-i="1" cx="600" cy="270" r="6"/><circle data-i="2" cx="975" cy="270" r="6"/>
+              <circle data-i="3" cx="975" cy="470" r="6"/><circle data-i="4" cx="600" cy="470" r="6"/><circle data-i="5" cx="225" cy="470" r="6"/>
+            </g>
+
+            <!-- Hub -->
+            <g class="fw-hub">
+              <text class="fw-s" x="330" y="326">fleet · deployment success</text>
+              <text class="fw-big" id="fwKpi" x="326" y="392">72%</text>
+              <rect class="fw-pill" x="330" y="410" width="196" height="24" rx="12"/>
+              <text class="fw-s fw-ink" id="fwKpiVer" x="428" y="426" text-anchor="middle">policy v1.0 in production</text>
+              <g id="fwBars"></g>
+              <text class="fw-s" x="870" y="326" text-anchor="end">illustrative numbers</text>
+            </g>
+
+            <!-- Packet -->
+            <circle class="fw-halo" id="fwHalo" cx="225" cy="270" r="14"/>
+            <circle class="fw-packet" id="fwPacket" cx="225" cy="270" r="6"/>
+
+            <!-- 01 DEPLOY -->
+            <g class="fw-st" data-i="0" transform="translate(60 40)">
+              <rect class="fw-card" width="330" height="200" rx="14"/>
+              <text class="fw-k" x="16" y="26">01 · DEPLOY</text>
+              <text class="fw-tag" x="314" y="26" text-anchor="end">fleet · ROS 2 · <tspan class="fwVer">v1.0</tspan></text>
+              <line class="fw-div" x1="0" x2="330" y1="38" y2="38"/>
+              <text class="fw-s" x="16" y="58">success</text>
+              <text class="fw-mid" id="fwDeployKpi" x="16" y="82">72%</text>
+              <line class="fw-table" x1="18" x2="312" y1="172" y2="172"/>
+              <path class="fw-bin" d="M232 172 v-16 M274 172 v-16"/>
+              <text class="fw-s" x="253" y="190" text-anchor="middle">bin</text>
+              <rect class="fw-base" x="96" y="164" width="28" height="8" rx="2"/>
+              <rect class="fw-cup" id="fwCup" x="43" y="156" width="14" height="16" rx="2"/>
+              <line class="fw-link" id="fwL1" x1="110" y1="164" x2="110" y2="90"/>
+              <line class="fw-link fw-link--2" id="fwL2" x1="110" y1="90" x2="160" y2="90"/>
+              <path class="fw-grip" id="fwGrip" d=""/>
+              <circle class="fw-joint" id="fwJ0" cx="110" cy="164" r="6"/>
+              <circle class="fw-joint" id="fwJ1" cx="110" cy="90" r="5"/>
+              <circle class="fw-joint" id="fwJ2" cx="160" cy="90" r="4"/>
+              <circle class="fw-flash" id="fwFlash" cx="150" cy="164" r="10"/>
+              <text class="fw-bad" id="fwFail" x="314" y="58" text-anchor="end">✗ grasp slip</text>
+            </g>
+
+            <!-- 02 CAPTURE -->
+            <g class="fw-st" data-i="1" transform="translate(435 40)">
+              <rect class="fw-card" width="330" height="200" rx="14"/>
+              <text class="fw-k" x="16" y="26">02 · CAPTURE</text>
+              <text class="fw-tag" x="314" y="26" text-anchor="end">ros-time-machine + VLM</text>
+              <line class="fw-div" x1="0" x2="330" y1="38" y2="38"/>
+              <g class="fw-eye" transform="translate(300 60)">
+                <ellipse rx="15" ry="9"/>
+                <circle id="fwPupil" r="4"/>
+              </g>
+              <text class="fw-vlm" x="280" y="64" text-anchor="end" id="fwVlmIdle">VLM · 1 fps</text>
+              <text class="fw-vlm" x="16" y="64" id="fwVlmSay">“cup slips from gripper” · 0.93</text>
+              <text class="fw-s" x="16" y="84">15 s ring buffer · RAM</text>
+              <text class="fw-s" x="314" y="84" text-anchor="end">now</text>
+              <rect class="fw-buf" x="16" y="90" width="298" height="54" rx="6"/>
+              <rect class="fw-win" id="fwWin" x="150" y="90" width="96" height="54"/>
+              <g clip-path="url(#fwBufClip)"><g class="fw-ticks" id="fwTicks"></g></g>
+              <line class="fw-T" id="fwT" x1="210" x2="210" y1="86" y2="148"/>
+              <path class="fw-brk" id="fwBrk" d="M150 148 v6 H246 v-6"/>
+              <text class="fw-s" id="fwBrkL" x="150" y="166" text-anchor="middle">T−5s</text>
+              <text class="fw-s" id="fwBrkR" x="246" y="166" text-anchor="middle">T+3s</text>
+              <text class="fw-s fw-orange" id="fwTl" x="210" y="166" text-anchor="middle">T</text>
+              <g id="fwClip">
+                <rect class="fw-chip" x="78" y="174" width="236" height="20" rx="6"/>
+                <text class="fw-s fw-ink" x="196" y="188" text-anchor="middle">clip_0412.mcap · event.json</text>
+              </g>
+            </g>
+
+            <!-- 03 CURATE -->
+            <g class="fw-st" data-i="2" transform="translate(810 40)">
+              <rect class="fw-card" width="330" height="200" rx="14"/>
+              <text class="fw-k" x="16" y="26">03 · CURATE</text>
+              <text class="fw-tag" x="314" y="26" text-anchor="end">forge · anvil</text>
+              <line class="fw-div" x1="0" x2="330" y1="38" y2="38"/>
+              <text class="fw-s" x="16" y="56">episode</text>
+              <text class="fw-s" x="104" y="56">forge score</text>
+              <text class="fw-s" x="314" y="56" text-anchor="end">anvil</text>
+              <g id="fwRows"></g>
+              <text class="fw-s" id="fwCurSum" x="16" y="186">→ train set <tspan class="fw-good">+2 clean</tspan> · −1 drift · −1 dup</text>
+            </g>
+
+            <!-- 04 TRAIN -->
+            <g class="fw-st" data-i="3" transform="translate(810 500)">
+              <rect class="fw-card" width="330" height="200" rx="14"/>
+              <text class="fw-k" x="16" y="26">04 · TRAIN</text>
+              <text class="fw-tag" x="314" y="26" text-anchor="end">base + field data</text>
+              <line class="fw-div" x1="0" x2="330" y1="38" y2="38"/>
+              <text class="fw-s" x="16" y="62">loss</text>
+              <path class="fw-axis" d="M44 52 V150 H310"/>
+              <path class="fw-loss" id="fwLoss" d="M46 60 C 90 118, 140 128, 200 134 S 280 141, 306 142"/>
+              <text class="fw-s" id="fwEpoch" x="16" y="186">epoch 12/12</text>
+              <g id="fwCand">
+                <rect class="fw-chip fw-chip--accent" x="164" y="170" width="150" height="22" rx="6"/>
+                <text class="fw-s fw-ink" id="fwCandT" x="239" y="185" text-anchor="middle">candidate v1.1</text>
+              </g>
+            </g>
+
+            <!-- 05 EVALUATE -->
+            <g class="fw-st" data-i="4" transform="translate(435 500)">
+              <rect class="fw-card" width="330" height="200" rx="14"/>
+              <text class="fw-k" x="16" y="26">05 · EVALUATE</text>
+              <text class="fw-tag" x="314" y="26" text-anchor="end">armature · sim</text>
+              <line class="fw-div" x1="0" x2="330" y1="38" y2="38"/>
+              <g id="fwDots"></g>
+              <text class="fw-s" x="210" y="62">seeded stress trials</text>
+              <text class="fw-mid" id="fwEvalN" x="210" y="98">46/50</text>
+              <text class="fw-s" id="fwEvalPrev" x="210" y="120">current: 41/50</text>
+              <text class="fw-s fw-good" id="fwEvalOk" x="210" y="142">✓ beats current</text>
+              <text class="fw-s" x="16" y="186">same task, randomized seeds, new policy</text>
+            </g>
+
+            <!-- 06 SHIP -->
+            <g class="fw-st" data-i="5" transform="translate(60 500)">
+              <rect class="fw-card" width="330" height="200" rx="14"/>
+              <text class="fw-k" x="16" y="26">06 · SHIP</text>
+              <text class="fw-tag" x="314" y="26" text-anchor="end">anvil · agent skills</text>
+              <line class="fw-div" x1="0" x2="330" y1="38" y2="38"/>
+              <g id="fwShip1">
+                <text class="fw-s" x="16" y="60">anvil · real cell vs pin</text>
+                <text class="fw-ink fw-row" x="16" y="78">light · camera pose · objects</text>
+                <text class="fw-good fw-check" x="314" y="78" text-anchor="end">✓</text>
+              </g>
+              <g id="fwShip2">
+                <text class="fw-s" x="16" y="104">agent + robotics skills</text>
+                <text class="fw-ink fw-row" x="16" y="122">ros2 bringup · lifecycle · QoS</text>
+                <text class="fw-good fw-check" x="314" y="122" text-anchor="end">✓</text>
+              </g>
+              <g id="fwShipChip">
+                <rect class="fw-chip fw-chip--ship" x="16" y="148" width="298" height="36" rx="10"/>
+                <text class="fw-shipt" id="fwShipT" x="165" y="171" text-anchor="middle">ship v1.1 → fleet</text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="fw__foot">
+            <div class="fw__cap" aria-live="polite">
+              <p class="fw__capk mono" id="fwCapK">01 · Deploy</p>
+              <p class="fw__capt" id="fwCapT"></p>
+              <div class="proj__links" id="fwCapL"></div>
+            </div>
+            <div class="fw__ctrl">
+              <div class="fw__steps" role="tablist" aria-label="Flywheel stages" id="fwSteps"></div>
+              <button class="icon-btn" id="fwPlay" aria-label="Pause animation">
+                <svg class="i-pause" viewBox="0 0 24 24" width="16" height="16"><path d="M8 5v14M16 5v14"/></svg>
+                <svg class="i-play" viewBox="0 0 24 24" width="16" height="16"><path d="M7 5l12 7-12 7z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -633,5 +776,6 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/flywheel.js" defer></script>
 </body>
 </html>

@@ -61,18 +61,6 @@
     revealer.observe(el);
   });
 
-  /* ---------- Pipeline: highlight a stage when its tool card is hovered ---------- */
-  const stageOf = {
-    'p-rtm': ['capture'], 'p-armature': ['capture'], 'p-anvil': ['validate'],
-    'p-forge': ['validate', 'convert', 'curate'], 'p-tessera': ['curate'], 'p-frameforge': ['train'],
-  };
-  Object.entries(stageOf).forEach(([id, stages]) => {
-    const card = document.getElementById(id);
-    if (!card) return;
-    card.addEventListener('mouseenter', () => stages.forEach(s => $(`.stage[data-stage="${s}"]`)?.classList.add('is-lit')));
-    card.addEventListener('mouseleave', () => $$('.stage.is-lit').forEach(s => s.classList.remove('is-lit')));
-  });
-
   /* ---------- Project filters ---------- */
   const filterBtns = $$('.filters .chip');
   filterBtns.forEach(btn => btn.addEventListener('click', () => {
