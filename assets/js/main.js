@@ -44,15 +44,11 @@
     mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg>',
     linkedin: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5.5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.3 8.6h3.4V20H3.3zM9.2 8.6h3.26v1.56h.05c.45-.86 1.56-1.77 3.22-1.77 3.44 0 4.07 2.27 4.07 5.21V20h-3.4v-5.73c0-1.37-.02-3.13-1.9-3.13-1.91 0-2.2 1.49-2.2 3.03V20H9.2z"/></svg>',
     github: '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>',
-    openreview: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z" fill="currentColor" fill-opacity=".12"/><path d="M14 3v4h4"/></svg>',
-    paper: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>',
   };
   const LINKS = [
     { key: 'mail', cls: 'ci--mail', label: 'Email', sub: EMAIL, href: `mailto:${EMAIL}`, copy: EMAIL },
     { key: 'linkedin', cls: 'ci--linkedin', label: 'LinkedIn', sub: 'linkedin.com/in/arpitgupta', href: 'https://www.linkedin.com/in/arpitgupta/' },
     { key: 'github', cls: 'ci--github', label: 'GitHub', sub: 'github.com/arpitg1304', href: 'https://github.com/arpitg1304' },
-    { key: 'openreview', cls: 'ci--openreview', label: 'OpenReview', sub: 'CoRL 2026 submission', href: 'https://openreview.net/forum?id=Vv1WXMkSTD' },
-    { key: 'paper', cls: 'ci--paper', label: 'CoRL 2026 project page', sub: 'pair-data-platform.github.io/data-core-rs', href: 'https://pair-data-platform.github.io/data-core-rs/' },
   ];
   let dlg = null;
   function buildDialog() {

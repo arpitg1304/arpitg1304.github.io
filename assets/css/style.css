@@ -855,7 +855,5 @@ input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border-radius
 .ci--linkedin { background: #0a66c2; color: #fff; }
 .ci--github { background: var(--text); color: var(--bg); }
 .ci--github svg { width: 21px; height: 21px; }
-.ci--openreview { background: #8c1b13; color: #fff; }
-.ci--paper { background: var(--surface); color: var(--text); border: 1px solid var(--line-strong); }
 .cdlg__foot { margin: 16px 2px 0; font-size: 11.5px; color: var(--faint); }
 .cdlg h2:focus { outline: none; }
