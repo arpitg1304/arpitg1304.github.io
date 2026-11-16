@@ -198,7 +198,7 @@ strong { color: var(--text); font-weight: 600; }
   filter: blur(10px);
 }
 .hero__grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 56px; align-items: center; }
-.hero__title { font-size: clamp(42px, 6.4vw, 78px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 600; }
+.hero__title { font-size: clamp(40px, 5.6vw, 70px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 600; }
 .hero__lede { font-size: 18.5px; color: var(--muted); max-width: 580px; margin: 28px 0 34px; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero__social { list-style: none; padding: 0; margin: 30px 0 0; display: flex; flex-wrap: wrap; gap: 22px; font: 500 13.5px/1 var(--f-mono); }
@@ -536,3 +536,53 @@ input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border-radius
 
 /* Grid children must be allowed to shrink below their content (canvas/pre) width. */
 .hero__grid > *, .paper > *, .proj > *, .proj-grid > *, .pipeline > *, .edu > *, .writing > *, .archive > * { min-width: 0; }
+
+/* ---------- About: the robot stack (L4 top → L1 bottom) ---------- */
+.layers { list-style: none; margin: 0; padding: 0 0 0 56px; display: flex; flex-direction: column; gap: 12px; position: relative; }
+.layers::before {
+  content: ""; position: absolute; left: 17px; top: 28px; bottom: 28px; width: 2px;
+  background: repeating-linear-gradient(180deg, var(--line-strong) 0 6px, transparent 6px 12px);
+}
+.layers::after {
+  content: ""; position: absolute; left: 14px; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--cyan); box-shadow: 0 0 12px var(--cyan);
+  animation: rise 5s linear infinite;
+}
+@keyframes rise { from { top: calc(100% - 32px); opacity: 0; } 8% { opacity: 1; } 92% { opacity: 1; } to { top: 24px; opacity: 0; } }
+.layer {
+  position: relative;
+  display: grid; grid-template-columns: 270px 1fr 1.15fr; gap: 28px; align-items: start;
+  padding: 26px 28px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface);
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+.layer::before {
+  content: ""; position: absolute; left: -45px; top: 30px; width: 14px; height: 14px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--line-strong); transition: all .25s;
+}
+.layer:hover { border-color: var(--accent); transform: translateX(4px); }
+.layer:hover::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 5px var(--accent-soft); }
+.layer__id { display: flex; flex-direction: column; gap: 10px; }
+.layer__n {
+  align-self: flex-start; font-size: 12px; padding: 4px 8px; border-radius: 6px;
+  color: var(--accent); background: var(--accent-soft);
+}
+.layer h3 { font-size: 22px; }
+.layer__what { margin: 0; color: var(--text); font-size: 15.5px; line-height: 1.55; }
+.layer__ev { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.layer__ev li { position: relative; padding-left: 18px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.layer__ev li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); font-size: 11px; top: 2px; }
+.layer__ev a { color: var(--text); border-bottom: 1px solid var(--line-strong); }
+.layer__ev a:hover { color: var(--accent); border-color: var(--accent); }
+
+@media (max-width: 1080px) {
+  .layer { grid-template-columns: 220px 1fr; }
+  .layer__ev { grid-column: 2; }
+}
+@media (max-width: 640px) {
+  .layers { padding-left: 30px; }
+  .layers::before { left: 7px; }
+  .layers::after { left: 4px; }
+  .layer::before { left: -29px; }
+  .layer { grid-template-columns: 1fr; gap: 14px; padding: 22px; }
+  .layer__ev { grid-column: auto; }
+}
