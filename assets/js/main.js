@@ -151,14 +151,19 @@
     head.setAttribute('aria-expanded', String(open));
   }));
 
-  /* ---------- Archive: play GIF on hover ---------- */
+  /* ---------- Archive: play clips on hover (or when in view on touch) ---------- */
+  const vids = $$('.arc__vid');
+  const playV = v => { const pr = v.play(); if (pr && pr.catch) pr.catch(() => {}); v.classList.add('is-playing'); };
+  const stopV = v => { v.pause(); v.classList.remove('is-playing'); };
   if (window.matchMedia('(hover: hover)').matches) {
-    $$('.arc img[data-gif]').forEach(img => {
-      const still = img.src;
-      const card = img.closest('.arc');
-      card.addEventListener('mouseenter', () => { img.src = img.dataset.gif; });
-      card.addEventListener('mouseleave', () => { img.src = still; });
+    vids.forEach(v => {
+      const card = v.closest('.arc');
+      card.addEventListener('mouseenter', () => playV(v));
+      card.addEventListener('mouseleave', () => stopV(v));
     });
+  } else if (!reduceMotion) {
+    const vio = new IntersectionObserver(es => es.forEach(e => (e.isIntersecting ? playV(e.target) : stopV(e.target))), { threshold: 0.6 });
+    vids.forEach(v => vio.observe(v));
   }
 
   const yr = $('#year'); if (yr) yr.textContent = new Date().getFullYear();

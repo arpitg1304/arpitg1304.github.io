@@ -39,7 +39,7 @@
     "knowsAbout": ["Robotics", "ROS 2", "Robot perception", "Sensor calibration", "Robot learning", "Vision-Language-Action models", "Robotics data infrastructure"],
     "worksFor": { "@type": "Organization", "name": "General Motors" },
     "alumniOf": "Worcester Polytechnic Institute",
-    "sameAs": ["https://github.com/arpitg1304", "https://www.linkedin.com/in/arpit-gupta-wpi/"]
+    "sameAs": ["https://github.com/arpitg1304", "https://www.linkedin.com/in/arpitgupta/"]
   }
   </script>
 </head>
@@ -56,11 +56,11 @@
         <span class="brand__name">Arpit Gupta</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#about">About</a>
+        <a href="#flywheel">Flywheel</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">Stack</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#writing">Writing</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav__actions">
@@ -86,8 +86,8 @@
           <p class="hero__lede reveal">
             I work across the whole robot: sensors and calibration, ROS software and perception, the learned
             policies on top, and the platform and infrastructure robot learning runs on. That's meant
-            <strong>1,000+ deployed warehouse robots</strong>, VLA work on <strong>Atlas</strong> and
-            <strong>Spot</strong> at Boston Dynamics, and now hill-climbing onboard VLM/VLA models at Cruise.
+            <strong>1,000+ deployed warehouse robots</strong>, leading data infrastructure and platform
+            work for robot learning at Boston Dynamics, and now hill-climbing onboard VLM/VLA models at Cruise.
           </p>
           <div class="hero__cta reveal">
             <a class="btn btn--primary" href="#projects">See the work <span aria-hidden="true">→</span></a>
@@ -95,7 +95,7 @@
           </div>
           <ul class="hero__social reveal" aria-label="Profiles">
             <li><a href="https://github.com/arpitg1304" target="_blank" rel="noopener">GitHub ↗</a></li>
-            <li><a href="https://www.linkedin.com/in/arpit-gupta-wpi/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/arpitgupta/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
             <li><a href="https://openreview.net/forum?id=Vv1WXMkSTD" target="_blank" rel="noopener">OpenReview ↗</a></li>
           </ul>
         </div>
@@ -129,61 +129,11 @@
       </div>
     </section>
 
-    <!-- ============ ABOUT / LAYERS ============ -->
-    <section class="section" id="about">
-      <div class="wrap">
-        <header class="section__head reveal">
-          <p class="kicker mono">01 / Across the stack</p>
-          <h2>A robotics engineer who works every layer of the robot.</h2>
-          <p class="section__lede">Robots fail at the seams: a calibration that drifts, a ROS node that drops frames, a model that ships but can't be retrained, a platform nobody can query. I've built every layer on real robots in production, and I design each one with the next in mind.</p>
-        </header>
-
-        <ol class="layers">
-          <li class="layer reveal">
-            <div class="layer__id"><span class="layer__n mono">L4</span><h3>Platform &amp; infrastructure</h3></div>
-            <p class="layer__what">The data platforms, pipelines and training infrastructure that turn robot logs into models, and models back into robots.</p>
-            <ul class="layer__ev">
-              <li>PB-scale robot-learning data platform for 50+ researchers at Boston Dynamics</li>
-              <li>On-robot model deployment with ONNX and TensorRT, serving 1M+ inferences a day</li>
-              <li><a href="#p-forge">Forge</a> · <a href="#p-tessera">Tessera</a> · <a href="#research">CoRL 2026</a></li>
-            </ul>
-          </li>
-          <li class="layer reveal">
-            <div class="layer__id"><span class="layer__n mono">L3</span><h3>Perception &amp; robot learning</h3></div>
-            <p class="layer__what">Models that see and act: detection and segmentation running on robots, and the VLA and imitation-learning policies on top.</p>
-            <ul class="layer__ev">
-              <li>Multimodal VLA training data for Atlas and Spot (RGB-D, proprioception, force/torque)</li>
-              <li>YOLO and U-Net perception for people, robots and forklifts on Fetch and 6RS fleets</li>
-              <li>Onboard VLM/VLA hill-climbing at Cruise: data mixes, ablations, agentic labeling</li>
-            </ul>
-          </li>
-          <li class="layer reveal">
-            <div class="layer__id"><span class="layer__n mono">L2</span><h3>Robot software</h3></div>
-            <p class="layer__what">ROS systems that hold up in production: correct QoS, lifecycle nodes, bounded callbacks, recording and bringup.</p>
-            <ul class="layer__ev">
-              <li>Perception nodes running on 1,000+ deployed warehouse robots</li>
-              <li><a href="#p-rtm">ROS Time Machine</a>: event-triggered MCAP recording in C++17 / ROS 2</li>
-              <li><a href="#p-skills">Robotics Agent Skills</a>: production ROS patterns for AI coding agents</li>
-            </ul>
-          </li>
-          <li class="layer reveal">
-            <div class="layer__id"><span class="layer__n mono">L1</span><h3>Sensors &amp; calibration</h3></div>
-            <p class="layer__what">Clean, trustworthy signals: cameras, depth, LiDAR and IMUs, calibrated and fused.</p>
-            <ul class="layer__ev">
-              <li>Point-cloud camera calibration that cut site setup from 4 hours to 15 minutes (patent filed)</li>
-              <li>Monocular SLAM scale from ground planes plus CAN bus and IMU fusion at Panasonic</li>
-              <li><a href="#p-anvil">Anvil</a>: catch scene and camera drift between collection sessions</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </section>
-
     <!-- ============ FLYWHEEL ============ -->
     <section class="section section--alt" id="flywheel">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker mono">02 / The flywheel</p>
+          <p class="kicker mono">01 / The flywheel</p>
           <h2>Every failure in the field makes the next policy better.</h2>
           <p class="section__lede">This is the loop I build toward, with one of my open-source tools at each step. A deployed robot slips. ROS Time Machine and a VLM catch it. Forge and Anvil turn it into clean training data. Armature tests the new candidate. Anvil and an agent with Robotics Agent Skills ship it back to the fleet.</p>
         </header>
@@ -319,7 +269,7 @@
               <text class="fw-tag" x="314" y="26" text-anchor="end">armature · sim</text>
               <line class="fw-div" x1="0" x2="330" y1="38" y2="38"/>
               <g id="fwDots"></g>
-              <text class="fw-s" x="210" y="62">seeded stress trials</text>
+              <text class="fw-s" x="210" y="62">stress trials</text>
               <text class="fw-mid" id="fwEvalN" x="210" y="98">46/50</text>
               <text class="fw-s" id="fwEvalPrev" x="210" y="120">current: 41/50</text>
               <text class="fw-s fw-good" id="fwEvalOk" x="210" y="142">✓ beats current</text>
@@ -367,230 +317,11 @@
       </div>
     </section>
 
-    <!-- ============ RESEARCH ============ -->
-    <section class="section" id="research">
-      <div class="wrap">
-        <header class="section__head reveal">
-          <p class="kicker mono">03 / Research</p>
-          <h2>Publication</h2>
-        </header>
-
-        <article class="paper reveal">
-          <div class="paper__main">
-            <div class="paper__venue"><span class="badge badge--accent">CoRL 2026</span><span class="mono muted">Conference on Robot Learning</span></div>
-            <h3 class="paper__title">An Empirical Study of Data-Loading Bottlenecks (and Non-Bottlenecks) in Robotic Imitation Learning</h3>
-            <p class="paper__authors">Mrinal Jain<sup>1</sup>, <strong>Arpit Gupta</strong><sup>2</sup>, Animesh Garg<sup>1</sup> <span class="muted">· <sup>1</sup>Georgia Tech &nbsp;<sup>2</sup>General Motors</span></p>
-            <p class="paper__tldr"><span class="mono">TL;DR</span> Faster data loaders don't shorten robot-policy training. Unindexed video seeking does lengthen it. We profiled end-to-end LeRobot training (ACT, SmolVLA) against a Rust data engine we built to be as fast as possible. The loader turned out not to be the bottleneck.</p>
-
-            <div class="paper__findings">
-              <div class="finding"><b>1–3.5%</b><span>of each training step is spent waiting for data. Model compute takes the rest.</span></div>
-              <div class="finding"><b>3.94×</b><span>isolated loader speedup over torchcodec, but 324 s vs 326 s end to end, within noise.</span></div>
-              <div class="finding"><b>5.6×</b><span>slower training from PyAV's unindexed AV1 seeking: the one real bottleneck.</span></div>
-            </div>
-
-            <figure class="paper__fig">
-              <img src="assets/img/concepts/corl.svg" alt="Chart: share of each training step spent on compute versus data wait. Data wait is 1.1 to 3.5 percent in standard configurations and about 488 percent with PyAV seeking in AV1 video" loading="lazy" width="800" height="500">
-            </figure>
-
-            <div class="paper__links">
-              <a class="btn btn--primary btn--sm" href="https://pair-data-platform.github.io/data-core-rs/" target="_blank" rel="noopener">Project page ↗</a>
-              <a class="btn btn--sm" href="https://openreview.net/pdf?id=Vv1WXMkSTD" target="_blank" rel="noopener">PDF</a>
-              <a class="btn btn--sm" href="https://github.com/PAIR-data-platform/data-core-rs" target="_blank" rel="noopener">Code</a>
-              <a class="btn btn--sm" href="https://openreview.net/forum?id=Vv1WXMkSTD" target="_blank" rel="noopener">OpenReview</a>
-              <button class="btn btn--sm btn--ghost" id="bibBtn" aria-controls="bib" aria-expanded="false">BibTeX</button>
-            </div>
-            <pre class="bib" id="bib" hidden><code>@inproceedings{jain2026dataloading,
-  title     = {An Empirical Study of Data-Loading Bottlenecks
-               (and Non-Bottlenecks) in Robotic Imitation Learning},
-  author    = {Jain, Mrinal and Gupta, Arpit and Garg, Animesh},
-  booktitle = {Conference on Robot Learning (CoRL)},
-  year      = {2026},
-  url       = {https://openreview.net/forum?id=Vv1WXMkSTD}
-}</code><button class="copy mono" data-copy="bib">copy</button></pre>
-          </div>
-
-          <aside class="amdahl" aria-labelledby="amdahlTitle">
-            <p class="mono kicker" id="amdahlTitle">Try it · Amdahl's ceiling</p>
-            <p class="amdahl__q">How much would a faster loader speed up <em>your</em> training run?</p>
-            <label class="field">
-              <span>Data-path ratio <i>r</i> = data_s / updt_s</span>
-              <input type="range" id="rIn" min="0" max="1000" step="1" value="530" aria-describedby="rOut">
-              <output id="rOut" class="mono">3.5%</output>
-            </label>
-            <label class="field">
-              <span>Loader speedup <i>k</i></span>
-              <input type="range" id="kIn" min="1" max="50" step="1" value="10">
-              <output id="kOut" class="mono">10×</output>
-            </label>
-            <div class="amdahl__presets">
-              <button class="chip" data-r="1.13">torchcodec (1.1%)</button>
-              <button class="chip" data-r="3.5">worst standard (3.5%)</button>
-              <button class="chip" data-r="488">PyAV + AV1 (488%)</button>
-            </div>
-            <div class="amdahl__out">
-              <div><span class="muted">Training speedup</span><b id="sOut" class="mono">1.032×</b></div>
-              <div><span class="muted">Ceiling, infinitely fast loader</span><b id="cOut" class="mono">1.035×</b></div>
-            </div>
-            <div class="amdahl__share"><span class="muted">Share of each step waiting on data</span><b class="mono" id="shareOut">3.4%</b></div>
-            <div class="amdahl__bar" aria-hidden="true"><span id="sBar"></span></div>
-            <p class="amdahl__f mono muted">S(k) = (1 + r) / (1 + r / k)</p>
-          </aside>
-        </article>
-      </div>
-    </section>
-
-    <!-- ============ PROJECTS ============ -->
-    <section class="section section--alt" id="projects">
-      <div class="wrap">
-        <header class="section__head reveal">
-          <p class="kicker mono">04 / Open source</p>
-          <h2>Open-source robotics, from ROS nodes to training loops.</h2>
-          <p class="section__lede">I built these to solve problems I hit shipping robots at 6 River Systems, Fetch and Boston Dynamics, and open-sourced them so other robotics teams don't have to rebuild them.</p>
-        </header>
-
-        <div class="filters reveal" role="group" aria-label="Filter projects">
-          <button class="chip is-on" data-filter="all">All</button>
-          <button class="chip" data-filter="ros">ROS &amp; robot software</button>
-          <button class="chip" data-filter="data">Robot learning data</button>
-          <button class="chip" data-filter="sim">Sim &amp; visual</button>
-          <button class="chip" data-filter="ai">AI agents &amp; tools</button>
-        </div>
-
-        <div class="projects">
-          <!-- Featured -->
-          <article class="proj proj--feature reveal" id="p-forge" data-tags="data">
-            <a class="proj__media" href="https://github.com/arpitg1304/forge" target="_blank" rel="noopener" tabindex="-1">
-              <img src="assets/img/concepts/forge.svg" alt="Concept: robot dataset formats (RLDS, LeRobot, HDF5, Zarr, MCAP, rosbag) converge into a central Episode/Frame hub and fan out to every writer and into a catalog with quality scores and semantic search" width="800" height="500">
-            </a>
-            <div class="proj__body">
-              <div class="proj__meta"><span class="mono">Python · PyPI</span><span class="stars" data-repo="forge">★ 184</span></div>
-              <h3>Forge</h3>
-              <p class="proj__tag">The robotics data toolkit and data engine.</p>
-              <p>Convert between every major robot-learning format (RLDS, LeRobot v2/v3, HDF5, Zarr, MCAP, rosbag) through a canonical <code>Episode/Frame</code> representation, so adding one reader gives you every writer instead of N×M converters. Score episodes on proprioceptive quality metrics (LDLJ smoothness, dead actions, gripper chatter), then register everything in a DuckDB catalog you can query with SQL, search semantically with SigLIP, and dedupe.</p>
-              <pre class="term mono"><span class="muted">$</span> pip install forge-robotics
-<span class="muted">$</span> forge quality hf://lerobot/pusht</pre>
-              <div class="proj__links">
-                <a href="https://github.com/arpitg1304/forge" target="_blank" rel="noopener">GitHub ↗</a>
-                <a href="https://arpitg1304.github.io/forge/" target="_blank" rel="noopener">Website ↗</a>
-                <a href="https://pypi.org/project/forge-robotics/" target="_blank" rel="noopener">PyPI ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="proj proj--feature proj--flip reveal" id="p-skills" data-tags="ros ai">
-            <a class="proj__media" href="https://github.com/arpitg1304/robotics-agent-skills" target="_blank" rel="noopener" tabindex="-1">
-              <img src="assets/img/concepts/skills.svg" alt="Concept: SKILL.md cards for ROS 2, perception, testing, bringup and security feed a coding agent, which outputs a ROS 2 lifecycle node with sensor QoS, watchdogs and tests" loading="lazy" width="800" height="500">
-            </a>
-            <div class="proj__body">
-              <div class="proj__meta"><span class="mono">SKILL.md · ROS1 / ROS2</span><span class="stars" data-repo="robotics-agent-skills">★ 401</span></div>
-              <h3>Robotics Agent Skills</h3>
-              <p class="proj__tag">Production robotics knowledge for AI coding agents.</p>
-              <p>General-purpose coding agents know ROS syntax but miss what matters in production: QoS compatibility, deterministic startup, bounded callbacks, sensor health and safe shutdown. Ten drop-in skills (ROS2, perception, testing, bringup, Docker, security, design patterns) for Claude Code, Cursor, Copilot and any agent that reads SKILL.md files.</p>
-              <div class="proj__links">
-                <a href="https://github.com/arpitg1304/robotics-agent-skills" target="_blank" rel="noopener">GitHub ↗</a>
-                <a href="https://github.com/arpitg1304/robotics-agent-skills/blob/main/evals/EVAL_REPORT.md" target="_blank" rel="noopener">Eval report ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="proj proj--feature reveal" id="p-rtm" data-tags="ros ai data">
-            <a class="proj__media" href="https://github.com/arpitg1304/ros-time-machine" target="_blank" rel="noopener" tabindex="-1">
-              <img src="assets/img/concepts/rtm.svg" alt="Concept: topic streams scroll through a 15-second RAM ring buffer; a VLM watcher flags object_dropped and the saved MCAP clip spans five seconds before to three seconds after the event" loading="lazy" width="800" height="500">
-            </a>
-            <div class="proj__body">
-              <div class="proj__meta"><span class="mono">C++17 · ROS 2 Jazzy · MCAP</span><span class="stars" data-repo="ros-time-machine">★ 23</span></div>
-              <h3>ROS Time Machine</h3>
-              <p class="proj__tag">A dashcam for your robot.</p>
-              <p>A rolling in-memory ring buffer for every topic. When a trigger fires, it stitches the <em>pre-event</em> buffer to live post-event recording in a single MCAP bag. <strong>v2 adds semantic triggers:</strong> describe events in plain English ("the cup falls from the gripper") and a vision-language model watching a 1 fps feed decides what to save. The clip points back to when the event <em>happened</em>, so model latency costs nothing.</p>
-              <div class="proj__links">
-                <a href="https://github.com/arpitg1304/ros-time-machine" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Grid -->
-          <div class="proj-grid">
-            <article class="card reveal" id="p-tessera" data-tags="data">
-              <a class="card__media" href="https://tessera.vlastudio.cloud/" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/tessera.svg" alt="Concept: clustered episode embeddings with diverse picks ringed across every cluster" loading="lazy" width="800" height="500"></a>
-              <div class="card__body">
-                <div class="proj__meta"><span class="mono">TypeScript · FastAPI</span><span class="stars" data-repo="tessera">★ 9</span></div>
-                <h3>Tessera</h3>
-                <p>Explore episode embeddings in UMAP space with GIF hover previews, then use k-means or stratified sampling to pick a maximally diverse training subset.</p>
-                <div class="proj__links"><a href="https://tessera.vlastudio.cloud/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/arpitg1304/tessera" target="_blank" rel="noopener">GitHub ↗</a></div>
-              </div>
-            </article>
-
-            <article class="card reveal" id="p-armature" data-tags="sim">
-              <a class="card__media" href="https://arpitg1304.github.io/armature/" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/armature.svg" alt="Concept: a robot arm in a kitting workcell picks parts into a kit while a demonstration is recorded" loading="lazy" width="800" height="500"></a>
-              <div class="card__body">
-                <div class="proj__meta"><span class="mono">WebGL · in-browser</span><span class="stars" data-repo="armature">★ 2</span></div>
-                <h3>Armature</h3>
-                <p>A browser robotics studio. Author a scene, choose a Panda, SO-101, UR5e or xArm 6, record demonstrations and export them in a LeRobot v3 layout, all from a single self-contained HTML page.</p>
-                <div class="proj__links"><a href="https://arpitg1304.github.io/armature/" target="_blank" rel="noopener">Launch sim ↗</a><a href="https://github.com/arpitg1304/armature" target="_blank" rel="noopener">GitHub ↗</a></div>
-              </div>
-            </article>
-
-            <article class="card reveal" id="p-anvil" data-tags="data">
-              <a class="card__media" href="https://github.com/arpitg1304/anvil" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/anvil.svg" alt="Concept: a pinned reference scene beside today's session, with the moved rack flagged as drift while camera pose and lighting pass" loading="lazy" width="800" height="500"></a>
-              <div class="card__body">
-                <div class="proj__meta"><span class="mono">GroundingDINO · DINOv3</span><span class="badge">v0.1 · active</span></div>
-                <h3>Anvil</h3>
-                <p>Pin a known-good scene and check every later collection session against it, so lighting drift, a nudged mat or a sagging camera mount gets flagged before it costs you 15% success rate three weeks later.</p>
-                <div class="proj__links"><a href="https://github.com/arpitg1304/anvil" target="_blank" rel="noopener">GitHub ↗</a></div>
-              </div>
-            </article>
-
-            <article class="card reveal" id="p-visuals" data-tags="sim ai">
-              <a class="card__media" href="https://arpitg1304.github.io/embodied-ai-visuals/" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/visuals.svg" alt="Concept: noise particles flow along straight paths onto a smooth robot action trajectory, as in flow matching" loading="lazy" width="800" height="500"></a>
-              <div class="card__body">
-                <div class="proj__meta"><span class="mono">HTML / JS · zero deps</span></div>
-                <h3>Embodied AI Visuals</h3>
-                <p>Interactive explainers for VLAs, diffusion policy, flow matching, action chunking, world models, sim-to-real and SLAM, each embeddable in slides or blog posts.</p>
-                <div class="proj__links"><a href="https://arpitg1304.github.io/embodied-ai-visuals/" target="_blank" rel="noopener">Explore ↗</a><a href="https://github.com/arpitg1304/embodied-ai-visuals" target="_blank" rel="noopener">GitHub ↗</a></div>
-              </div>
-            </article>
-
-            <article class="card reveal" id="p-frameforge" data-tags="data">
-              <a class="card__media" href="https://github.com/arpitg1304/frameforge" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/frameforge.svg" alt="Concept: a 16-frame sampling window slides within episode boundaries on a video strip and feeds four fork-safe workers" loading="lazy" width="800" height="500"></a>
-              <div class="card__body">
-                <div class="proj__meta"><span class="mono">PyTorch · PyAV</span></div>
-                <h3>frameforge</h3>
-                <p>Episode-aware, fork-safe video clip loading for robot-learning training. It never samples across an episode boundary, works with <code>num_workers&nbsp;&gt;&nbsp;0</code>, and keeps a 2&nbsp;TB video dataset from becoming 18&nbsp;TB of JPEGs.</p>
-                <pre class="term mono">DataLoader(ds, num_workers=8)
-<span class="muted"># just works</span></pre>
-                <div class="proj__links"><a href="https://github.com/arpitg1304/frameforge" target="_blank" rel="noopener">GitHub ↗</a></div>
-              </div>
-            </article>
-
-            <article class="card reveal" data-tags="ai">
-              <a class="card__media" href="https://github.com/arpitg1304/clipmind" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/clipmind.svg" alt="Concept: a natural-language query finds its nearest clipboard items in embedding space, with secrets redacted" loading="lazy" width="800" height="500"></a>
-              <div class="card__body">
-                <div class="proj__meta"><span class="mono">sentence-transformers · ChromaDB</span><span class="stars" data-repo="clipmind">★ 3</span></div>
-                <h3>ClipMind</h3>
-                <p>A clipboard manager you search by meaning. "auth endpoint" finds <code>/v2/oauth/token</code>. It runs 100% locally, auto-redacts secrets and recognizes stack traces you've already seen.</p>
-                <div class="proj__links"><a href="https://github.com/arpitg1304/clipmind" target="_blank" rel="noopener">GitHub ↗</a></div>
-              </div>
-            </article>
-
-            <article class="card card--wide reveal" data-tags="sim">
-              <a class="card__media" href="https://github.com/arpitg1304/robot_navigation_sim" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/navsim.svg" alt="Concept: a robot with sonar rays follows a potential field around obstacles to a target" loading="lazy" width="800" height="500"></a>
-              <div class="card__body">
-                <div class="proj__meta"><span class="mono">pygame · Gymnasium</span><span class="stars" data-repo="robot_navigation_sim">★ 2</span></div>
-                <h3>Robot Navigation Sim</h3>
-                <p>A pluggable reactive-navigation simulator with potential fields, wall following and other algorithms, plus an RL-ready Gymnasium environment trained across a curated set of diverse maps.</p>
-                <div class="proj__links"><a href="https://github.com/arpitg1304/robot_navigation_sim" target="_blank" rel="noopener">GitHub ↗</a></div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ EXPERIENCE ============ -->
     <section class="section" id="experience">
       <div class="wrap">
         <header class="section__head reveal">
-          <p class="kicker mono">05 / Experience</p>
+          <p class="kicker mono">02 / Experience</p>
           <h2>From warehouse fleets to humanoids to autonomous vehicles.</h2>
         </header>
 
@@ -620,9 +351,9 @@
               <span class="job__chev" aria-hidden="true"></span>
             </button>
             <div class="job__body"><div class="job__body-inner">
-              <p class="job__sum">The robot-learning platform behind Vision-Language-Action foundation models for <strong>Atlas</strong> and <strong>Spot</strong>, from multimodal robot logs to training-ready data.</p>
+              <p class="job__sum">Led data infrastructure and platform work for robot learning: the systems that take multimodal robot logs to training-ready data for foundation-model research on <strong>Atlas</strong> and <strong>Spot</strong>.</p>
               <ul>
-                <li>Unified RGB-D video, proprioception and force/torque streams into multimodal training datasets for VLA policies.</li>
+                <li>Unified RGB-D video, proprioception and force/torque streams into multimodal training datasets for foundation-model research.</li>
                 <li>Built a distributed data platform used by <strong>50+ ML researchers</strong> for PB-scale dataset search, curation, filtering and lineage.</li>
                 <li>Designed ingestion, preprocessing and dataset-versioning pipelines for large-scale egocentric and third-person robot data, supporting policy training and learning from human video.</li>
                 <li>Built semi-automated annotation with Segment Anything, CLIP and active learning to speed up manipulation supervision.</li>
@@ -707,8 +438,277 @@
       </div>
     </section>
 
+    <!-- ============ ABOUT / LAYERS ============ -->
+    <section class="section section--alt" id="about">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">03 / Across the stack</p>
+          <h2>A robotics engineer who works every layer of the robot.</h2>
+          <p class="section__lede">Robots fail at the seams: a calibration that drifts, a ROS node that drops frames, a model that ships but can't be retrained, a platform nobody can query. I've worked on every layer, on real robots in production, and I design each one with the next in mind.</p>
+        </header>
+
+        <ol class="layers">
+          <li class="layer reveal">
+            <div class="layer__id"><span class="layer__n mono">L4</span><h3>Platform &amp; infrastructure</h3></div>
+            <p class="layer__what">The data platforms, pipelines and training infrastructure that turn robot logs into models, and models back into robots.</p>
+            <ul class="layer__ev">
+              <li>Led data infrastructure and platform work at Boston Dynamics: PB-scale data for 50+ robot-learning researchers</li>
+              <li>On-robot model deployment with ONNX and TensorRT, serving 1M+ inferences a day</li>
+              <li><a href="#p-forge">Forge</a> · <a href="#p-tessera">Tessera</a> · <a href="#research">CoRL 2026</a></li>
+            </ul>
+          </li>
+          <li class="layer reveal">
+            <div class="layer__id"><span class="layer__n mono">L3</span><h3>Perception &amp; robot learning</h3></div>
+            <p class="layer__what">Models that see and act: detection and segmentation running on robots, and the VLA and imitation-learning policies on top.</p>
+            <ul class="layer__ev">
+              <li>Semi-automated annotation with SAM, CLIP and active learning for manipulation supervision</li>
+              <li>YOLO and U-Net perception for people, robots and forklifts on Fetch and 6RS fleets</li>
+              <li>Onboard VLM/VLA hill-climbing at Cruise: data mixes, ablations, agentic labeling</li>
+            </ul>
+          </li>
+          <li class="layer reveal">
+            <div class="layer__id"><span class="layer__n mono">L2</span><h3>Robot software</h3></div>
+            <p class="layer__what">ROS systems that hold up in production: correct QoS, lifecycle nodes, bounded callbacks, recording and bringup.</p>
+            <ul class="layer__ev">
+              <li>Perception nodes running on 1,000+ deployed warehouse robots</li>
+              <li><a href="#p-rtm">ROS Time Machine</a>: event-triggered MCAP recording in C++17 / ROS 2</li>
+              <li><a href="#p-skills">Robotics Agent Skills</a>: production ROS patterns for AI coding agents</li>
+            </ul>
+          </li>
+          <li class="layer reveal">
+            <div class="layer__id"><span class="layer__n mono">L1</span><h3>Sensors &amp; calibration</h3></div>
+            <p class="layer__what">Clean, trustworthy signals: cameras, depth, LiDAR and IMUs, calibrated and fused.</p>
+            <ul class="layer__ev">
+              <li>Point-cloud camera calibration that cut site setup from 4 hours to 15 minutes (patent filed)</li>
+              <li>Monocular SLAM scale from ground planes plus CAN bus and IMU fusion at Panasonic</li>
+              <li><a href="#p-anvil">Anvil</a>: catch scene and camera drift between collection sessions</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">04 / Research</p>
+          <h2>Publication</h2>
+        </header>
+
+        <article class="paper reveal">
+          <div class="paper__main">
+            <div class="paper__venue"><span class="badge badge--accent">CoRL 2026</span><span class="mono muted">Conference on Robot Learning</span></div>
+            <h3 class="paper__title">An Empirical Study of Data-Loading Bottlenecks (and Non-Bottlenecks) in Robotic Imitation Learning</h3>
+            <p class="paper__authors">Mrinal Jain<sup>1</sup>, <strong>Arpit Gupta</strong><sup>2</sup>, Animesh Garg<sup>1</sup> <span class="muted">· <sup>1</sup>Georgia Tech &nbsp;<sup>2</sup>General Motors</span></p>
+            <p class="paper__tldr"><span class="mono">TL;DR</span> Faster data loaders don't shorten robot-policy training. Unindexed video seeking does lengthen it. We profiled end-to-end LeRobot training (ACT, SmolVLA) against a Rust data engine we built to be as fast as possible. The loader turned out not to be the bottleneck.</p>
+
+            <div class="paper__findings">
+              <div class="finding"><b>1–3.5%</b><span>of each training step is spent waiting for data. Model compute takes the rest.</span></div>
+              <div class="finding"><b>3.94×</b><span>isolated loader speedup over torchcodec, but 324 s vs 326 s end to end, within noise.</span></div>
+              <div class="finding"><b>5.6×</b><span>slower training from PyAV's unindexed AV1 seeking: the one real bottleneck.</span></div>
+            </div>
+
+            <figure class="paper__fig">
+              <img src="assets/img/concepts/corl.svg" alt="Chart: share of each training step spent on compute versus data wait. Data wait is 1.1 to 3.5 percent in standard configurations and about 488 percent with PyAV seeking in AV1 video" loading="lazy" width="800" height="500">
+            </figure>
+
+            <div class="paper__links">
+              <a class="btn btn--primary btn--sm" href="https://pair-data-platform.github.io/data-core-rs/" target="_blank" rel="noopener">Project page ↗</a>
+              <a class="btn btn--sm" href="https://openreview.net/pdf?id=Vv1WXMkSTD" target="_blank" rel="noopener">PDF</a>
+              <a class="btn btn--sm" href="https://github.com/PAIR-data-platform/data-core-rs" target="_blank" rel="noopener">Code</a>
+              <a class="btn btn--sm" href="https://openreview.net/forum?id=Vv1WXMkSTD" target="_blank" rel="noopener">OpenReview</a>
+              <button class="btn btn--sm btn--ghost" id="bibBtn" aria-controls="bib" aria-expanded="false">BibTeX</button>
+            </div>
+            <pre class="bib" id="bib" hidden><code>@inproceedings{jain2026dataloading,
+  title     = {An Empirical Study of Data-Loading Bottlenecks
+               (and Non-Bottlenecks) in Robotic Imitation Learning},
+  author    = {Jain, Mrinal and Gupta, Arpit and Garg, Animesh},
+  booktitle = {Conference on Robot Learning (CoRL)},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=Vv1WXMkSTD}
+}</code><button class="copy mono" data-copy="bib">copy</button></pre>
+          </div>
+
+          <aside class="amdahl" aria-labelledby="amdahlTitle">
+            <p class="mono kicker" id="amdahlTitle">Try it · Amdahl's ceiling</p>
+            <p class="amdahl__q">How much would a faster loader speed up <em>your</em> training run?</p>
+            <label class="field">
+              <span>Data-path ratio <i>r</i> = data_s / updt_s</span>
+              <input type="range" id="rIn" min="0" max="1000" step="1" value="530" aria-describedby="rOut">
+              <output id="rOut" class="mono">3.5%</output>
+            </label>
+            <label class="field">
+              <span>Loader speedup <i>k</i></span>
+              <input type="range" id="kIn" min="1" max="50" step="1" value="10">
+              <output id="kOut" class="mono">10×</output>
+            </label>
+            <div class="amdahl__presets">
+              <button class="chip" data-r="1.13">torchcodec (1.1%)</button>
+              <button class="chip" data-r="3.5">worst standard (3.5%)</button>
+              <button class="chip" data-r="488">PyAV + AV1 (488%)</button>
+            </div>
+            <div class="amdahl__out">
+              <div><span class="muted">Training speedup</span><b id="sOut" class="mono">1.032×</b></div>
+              <div><span class="muted">Ceiling, infinitely fast loader</span><b id="cOut" class="mono">1.035×</b></div>
+            </div>
+            <div class="amdahl__share"><span class="muted">Share of each step waiting on data</span><b class="mono" id="shareOut">3.4%</b></div>
+            <div class="amdahl__bar" aria-hidden="true"><span id="sBar"></span></div>
+            <p class="amdahl__f mono muted">S(k) = (1 + r) / (1 + r / k)</p>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">05 / Open source</p>
+          <h2>Open-source robotics, from ROS nodes to training loops.</h2>
+          <p class="section__lede">I built these to solve problems I hit shipping robots at 6 River Systems, Fetch and Boston Dynamics, and open-sourced them so other robotics teams don't have to rebuild them.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="chip is-on" data-filter="all">All</button>
+          <button class="chip" data-filter="ros">ROS &amp; robot software</button>
+          <button class="chip" data-filter="data">Robot learning data</button>
+          <button class="chip" data-filter="sim">Sim &amp; visual</button>
+          <button class="chip" data-filter="ai">AI agents &amp; tools</button>
+        </div>
+
+        <div class="projects">
+          <!-- Featured -->
+          <article class="proj proj--feature reveal" id="p-forge" data-tags="data">
+            <a class="proj__media" href="https://github.com/arpitg1304/forge" target="_blank" rel="noopener" tabindex="-1">
+              <img src="assets/img/concepts/forge.svg" alt="Concept: robot dataset formats (RLDS, LeRobot, HDF5, Zarr, MCAP, rosbag) converge into a central Episode/Frame hub and fan out to every writer and into a catalog with quality scores and semantic search" width="800" height="500">
+            </a>
+            <div class="proj__body">
+              <div class="proj__meta"><span class="mono">Python · PyPI</span><span class="stars" data-repo="forge">★ 184</span></div>
+              <h3>Forge</h3>
+              <p class="proj__tag">The robotics data toolkit and data engine.</p>
+              <p>Convert between every major robot-learning format (RLDS, LeRobot v2/v3, HDF5, Zarr, MCAP, rosbag) through a canonical <code>Episode/Frame</code> representation, so adding one reader gives you every writer instead of N×M converters. Score episodes on proprioceptive quality metrics (LDLJ smoothness, dead actions, gripper chatter), then register everything in a DuckDB catalog you can query with SQL, search semantically with SigLIP, and dedupe.</p>
+              <pre class="term mono"><span class="muted">$</span> pip install forge-robotics
+<span class="muted">$</span> forge quality hf://lerobot/pusht</pre>
+              <div class="proj__links">
+                <a href="https://github.com/arpitg1304/forge" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="https://arpitg1304.github.io/forge/" target="_blank" rel="noopener">Website ↗</a>
+                <a href="https://pypi.org/project/forge-robotics/" target="_blank" rel="noopener">PyPI ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj proj--feature proj--flip reveal" id="p-skills" data-tags="ros ai">
+            <a class="proj__media" href="https://github.com/arpitg1304/robotics-agent-skills" target="_blank" rel="noopener" tabindex="-1">
+              <img src="assets/img/concepts/skills.svg" alt="Concept: SKILL.md cards for ROS 2, perception, testing, bringup and security feed a coding agent, which outputs a ROS 2 lifecycle node with sensor QoS, watchdogs and tests" loading="lazy" width="800" height="500">
+            </a>
+            <div class="proj__body">
+              <div class="proj__meta"><span class="mono">SKILL.md · ROS1 / ROS2</span><span class="stars" data-repo="robotics-agent-skills">★ 401</span></div>
+              <h3>Robotics Agent Skills</h3>
+              <p class="proj__tag">Production robotics knowledge for AI coding agents.</p>
+              <p>General-purpose coding agents know ROS syntax but miss what matters in production: QoS compatibility, deterministic startup, bounded callbacks, sensor health and safe shutdown. Ten drop-in skills (ROS2, perception, testing, bringup, Docker, security, design patterns) for Claude Code, Cursor, Copilot and any agent that reads SKILL.md files.</p>
+              <div class="proj__links">
+                <a href="https://github.com/arpitg1304/robotics-agent-skills" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="https://github.com/arpitg1304/robotics-agent-skills/blob/main/evals/EVAL_REPORT.md" target="_blank" rel="noopener">Eval report ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj proj--feature reveal" id="p-rtm" data-tags="ros ai data">
+            <a class="proj__media" href="https://github.com/arpitg1304/ros-time-machine" target="_blank" rel="noopener" tabindex="-1">
+              <img src="assets/img/concepts/rtm.svg" alt="Concept: topic streams scroll through a 15-second RAM ring buffer; a VLM watcher flags object_dropped and the saved MCAP clip spans five seconds before to three seconds after the event" loading="lazy" width="800" height="500">
+            </a>
+            <div class="proj__body">
+              <div class="proj__meta"><span class="mono">C++17 · ROS 2 Jazzy · MCAP</span><span class="stars" data-repo="ros-time-machine">★ 23</span></div>
+              <h3>ROS Time Machine</h3>
+              <p class="proj__tag">A dashcam for your robot.</p>
+              <p>A rolling in-memory ring buffer for every topic. When a trigger fires, it stitches the <em>pre-event</em> buffer to live post-event recording in a single MCAP bag. <strong>v2 adds semantic triggers:</strong> describe events in plain English ("the cup falls from the gripper") and a vision-language model watching a 1 fps feed decides what to save. The clip points back to when the event <em>happened</em>, so model latency costs nothing.</p>
+              <div class="proj__links">
+                <a href="https://github.com/arpitg1304/ros-time-machine" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Grid -->
+          <div class="proj-grid">
+            <article class="card reveal" id="p-tessera" data-tags="data">
+              <a class="card__media" href="https://github.com/arpitg1304/tessera" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/tessera.svg" alt="Concept: clustered episode embeddings with diverse picks ringed across every cluster" loading="lazy" width="800" height="500"></a>
+              <div class="card__body">
+                <div class="proj__meta"><span class="mono">TypeScript · FastAPI</span><span class="stars" data-repo="tessera">★ 9</span></div>
+                <h3>Tessera</h3>
+                <p>Explore episode embeddings in UMAP space with GIF hover previews, then use k-means or stratified sampling to pick a maximally diverse training subset.</p>
+                <div class="proj__links"><a href="https://github.com/arpitg1304/tessera" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
+            </article>
+
+            <article class="card reveal" id="p-armature" data-tags="sim">
+              <a class="card__media" href="https://arpitg1304.github.io/armature/" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/armature.svg" alt="Concept: a robot arm in a kitting workcell picks parts into a kit while a demonstration is recorded" loading="lazy" width="800" height="500"></a>
+              <div class="card__body">
+                <div class="proj__meta"><span class="mono">WebGL · in-browser</span><span class="stars" data-repo="armature">★ 2</span></div>
+                <h3>Armature</h3>
+                <p>A browser robotics studio. Author a scene, choose a Panda, SO-101, UR5e or xArm 6, record demonstrations and export them in a LeRobot v3 layout, all from a single self-contained HTML page.</p>
+                <div class="proj__links"><a href="https://arpitg1304.github.io/armature/" target="_blank" rel="noopener">Launch sim ↗</a><a href="https://github.com/arpitg1304/armature" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
+            </article>
+
+            <article class="card reveal" id="p-anvil" data-tags="data">
+              <a class="card__media" href="https://github.com/arpitg1304/anvil" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/anvil.svg" alt="Concept: a pinned reference scene beside today's session, with the moved rack flagged as drift while camera pose and lighting pass" loading="lazy" width="800" height="500"></a>
+              <div class="card__body">
+                <div class="proj__meta"><span class="mono">GroundingDINO · DINOv3</span><span class="badge">v0.1 · active</span></div>
+                <h3>Anvil</h3>
+                <p>Pin a known-good scene and check every later collection session against it, so lighting drift, a nudged mat or a sagging camera mount gets flagged before it costs you 15% success rate three weeks later.</p>
+                <div class="proj__links"><a href="https://github.com/arpitg1304/anvil" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
+            </article>
+
+            <article class="card reveal" id="p-visuals" data-tags="sim ai">
+              <a class="card__media" href="https://arpitg1304.github.io/embodied-ai-visuals/" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/visuals.svg" alt="Concept: noise particles flow along straight paths onto a smooth robot action trajectory, as in flow matching" loading="lazy" width="800" height="500"></a>
+              <div class="card__body">
+                <div class="proj__meta"><span class="mono">HTML / JS · zero deps</span></div>
+                <h3>Embodied AI Visuals</h3>
+                <p>Interactive explainers for VLAs, diffusion policy, flow matching, action chunking, world models, sim-to-real and SLAM, each embeddable in slides or blog posts.</p>
+                <div class="proj__links"><a href="https://arpitg1304.github.io/embodied-ai-visuals/" target="_blank" rel="noopener">Explore ↗</a><a href="https://github.com/arpitg1304/embodied-ai-visuals" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
+            </article>
+
+            <article class="card reveal" id="p-frameforge" data-tags="data">
+              <a class="card__media" href="https://github.com/arpitg1304/frameforge" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/frameforge.svg" alt="Concept: a 16-frame sampling window slides within episode boundaries on a video strip and feeds four fork-safe workers" loading="lazy" width="800" height="500"></a>
+              <div class="card__body">
+                <div class="proj__meta"><span class="mono">PyTorch · PyAV</span></div>
+                <h3>frameforge</h3>
+                <p>Episode-aware, fork-safe video clip loading for robot-learning training. It never samples across an episode boundary, works with <code>num_workers&nbsp;&gt;&nbsp;0</code>, and keeps a 2&nbsp;TB video dataset from becoming 18&nbsp;TB of JPEGs.</p>
+                <pre class="term mono">DataLoader(ds, num_workers=8)
+<span class="muted"># just works</span></pre>
+                <div class="proj__links"><a href="https://github.com/arpitg1304/frameforge" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
+            </article>
+
+            <article class="card reveal" data-tags="ai">
+              <a class="card__media" href="https://github.com/arpitg1304/clipmind" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/clipmind.svg" alt="Concept: a natural-language query finds its nearest clipboard items in embedding space, with secrets redacted" loading="lazy" width="800" height="500"></a>
+              <div class="card__body">
+                <div class="proj__meta"><span class="mono">sentence-transformers · ChromaDB</span><span class="stars" data-repo="clipmind">★ 3</span></div>
+                <h3>ClipMind</h3>
+                <p>A clipboard manager you search by meaning. "auth endpoint" finds <code>/v2/oauth/token</code>. It runs 100% locally, auto-redacts secrets and recognizes stack traces you've already seen.</p>
+                <div class="proj__links"><a href="https://github.com/arpitg1304/clipmind" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
+            </article>
+
+            <article class="card card--wide reveal" data-tags="sim">
+              <a class="card__media" href="https://github.com/arpitg1304/robot_navigation_sim" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/navsim.svg" alt="Concept: a robot with sonar rays follows a potential field around obstacles to a target" loading="lazy" width="800" height="500"></a>
+              <div class="card__body">
+                <div class="proj__meta"><span class="mono">pygame · Gymnasium</span><span class="stars" data-repo="robot_navigation_sim">★ 2</span></div>
+                <h3>Robot Navigation Sim</h3>
+                <p>A pluggable reactive-navigation simulator with potential fields, wall following and other algorithms, plus an RL-ready Gymnasium environment trained across a curated set of diverse maps.</p>
+                <div class="proj__links"><a href="https://github.com/arpitg1304/robot_navigation_sim" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ WRITING + SKILLS ============ -->
-    <section class="section section--alt" id="writing">
+    <section class="section" id="writing">
       <div class="wrap">
         <header class="section__head reveal">
           <p class="kicker mono">06 / Writing &amp; toolbox</p>
@@ -717,9 +717,9 @@
         </header>
 
         <div class="writing reveal">
-          <a class="essay" href="https://www.linkedin.com/in/arpit-gupta-wpi/recent-activity/all/" target="_blank" rel="noopener"><span class="mono muted">Essay</span><h3>The 100,000-year data gap</h3><p>How far robotics is from LLM-scale data, and why simulation and teleop alone won't close the gap.</p><span class="essay__go">Read on LinkedIn ↗</span></a>
-          <a class="essay" href="https://www.linkedin.com/in/arpit-gupta-wpi/recent-activity/all/" target="_blank" rel="noopener"><span class="mono muted">Essay</span><h3>The data pyramid for embodied AI</h3><p>Internet video, egocentric human data, sim and real robot demos: what each layer is good for.</p><span class="essay__go">Read on LinkedIn ↗</span></a>
-          <a class="essay" href="https://www.linkedin.com/in/arpit-gupta-wpi/recent-activity/all/" target="_blank" rel="noopener"><span class="mono muted">Essay</span><h3>Egocentric data and the limits of sim</h3><p>Trends in human-video learning and where simulated data still falls short.</p><span class="essay__go">Read on LinkedIn ↗</span></a>
+          <a class="essay" href="https://www.linkedin.com/in/arpitgupta/recent-activity/all/" target="_blank" rel="noopener"><span class="mono muted">Essay</span><h3>The 100,000-year data gap</h3><p>How far robotics is from LLM-scale data, and why simulation and teleop alone won't close the gap.</p><span class="essay__go">Read on LinkedIn ↗</span></a>
+          <a class="essay" href="https://www.linkedin.com/in/arpitgupta/recent-activity/all/" target="_blank" rel="noopener"><span class="mono muted">Essay</span><h3>The data pyramid for embodied AI</h3><p>Internet video, egocentric human data, sim and real robot demos: what each layer is good for.</p><span class="essay__go">Read on LinkedIn ↗</span></a>
+          <a class="essay" href="https://www.linkedin.com/in/arpitgupta/recent-activity/all/" target="_blank" rel="noopener"><span class="mono muted">Essay</span><h3>Egocentric data and the limits of sim</h3><p>Trends in human-video learning and where simulated data still falls short.</p><span class="essay__go">Read on LinkedIn ↗</span></a>
         </div>
 
         <div class="skills reveal">
@@ -733,7 +733,7 @@
     </section>
 
     <!-- ============ ARCHIVE ============ -->
-    <section class="section" id="archive">
+    <section class="section section--alt" id="archive">
       <div class="wrap">
         <header class="section__head reveal">
           <p class="kicker mono">07 / Archive · 2017–2019</p>
@@ -741,12 +741,12 @@
           <p class="section__lede">Where it started at WPI: visual servoing, learned odometry, surgical haptics. Hover over a project to play it.</p>
         </header>
         <div class="archive">
-          <a class="arc reveal" href="https://github.com/arpitg1304/ObjectCapture" target="_blank" rel="noopener"><img src="assets/img/archive/visual_servoing.jpg" data-gif="assets/img/archive/visual_servoing.gif" alt="ABB arm catching an object in simulation" loading="lazy"><div><h3>Catching flying objects with visual servoing</h3><p class="mono muted">ABB IRB 140 · Kinect · V-REP · PID</p></div></a>
-          <a class="arc reveal" href="https://github.com/arpitg1304" target="_blank" rel="noopener"><img src="assets/img/archive/odom.jpg" data-gif="assets/img/archive/odom.gif" alt="Estimated trajectory on KITTI" loading="lazy"><div><h3>Deep visual + LiDAR odometry</h3><p class="mono muted">RCNN + LSTM · PointNet · KITTI</p></div></a>
-          <a class="arc reveal" href="https://github.com/arpitg1304/DVRK_haptic" target="_blank" rel="noopener"><img src="assets/img/archive/haptics1.jpg" data-gif="assets/img/archive/haptics1.gif" alt="Haptic surgical simulator" loading="lazy"><div><h3>Haptic surgical sim for the da Vinci</h3><p class="mono muted">CHAI3D · Bullet · ROS · dVRK</p></div></a>
-          <a class="arc reveal" href="https://github.com/dpwivagg/imu_teleop" target="_blank" rel="noopener"><img src="assets/img/archive/imu.jpg" data-gif="assets/img/archive/imu.gif" alt="IMU-driven robot arm teleoperation" loading="lazy"><div><h3>IMU teleoperation of a robot arm</h3><p class="mono muted">Arduino · ROS · Gazebo</p></div></a>
-          <a class="arc reveal" href="https://github.com/arpitg1304/RBE-549-Computer-Vision-Project" target="_blank" rel="noopener"><img src="assets/img/archive/vehicle_detect.jpg" data-gif="assets/img/archive/vehicle_detect.gif" alt="Vehicle detection bounding boxes on a highway" loading="lazy"><div><h3>Real-time vehicle detection</h3><p class="mono muted">CNN · transfer learning · KITTI</p></div></a>
-          <a class="arc reveal" href="https://github.com/arpitg1304/a3c" target="_blank" rel="noopener"><img src="assets/img/archive/cart.jpg" data-gif="assets/img/archive/cart.gif" alt="Cart-pole balancing" loading="lazy"><div><h3>Deep Q-learning on cart-pole</h3><p class="mono muted">TensorFlow · OpenAI Gym</p></div></a>
+          <a class="arc reveal" href="https://github.com/arpitg1304/ObjectCapture" target="_blank" rel="noopener"><video class="arc__vid" style="background-image:url(assets/img/archive/visual_servoing.jpg)" muted loop playsinline preload="none" aria-label="ABB arm catching an object in simulation"><source src="assets/img/archive/visual_servoing.mp4" type="video/mp4"></video><div><h3>Catching flying objects with visual servoing</h3><p class="mono muted">ABB IRB 140 · Kinect · V-REP · PID</p></div></a>
+          <a class="arc reveal" href="https://github.com/arpitg1304" target="_blank" rel="noopener"><video class="arc__vid" style="background-image:url(assets/img/archive/odom.jpg)" muted loop playsinline preload="none" aria-label="Estimated trajectory on KITTI"><source src="assets/img/archive/odom.mp4" type="video/mp4"></video><div><h3>Deep visual + LiDAR odometry</h3><p class="mono muted">RCNN + LSTM · PointNet · KITTI</p></div></a>
+          <a class="arc reveal" href="https://github.com/arpitg1304/DVRK_haptic" target="_blank" rel="noopener"><video class="arc__vid" style="background-image:url(assets/img/archive/haptics1.jpg)" muted loop playsinline preload="none" aria-label="Haptic surgical simulator"><source src="assets/img/archive/haptics1.mp4" type="video/mp4"></video><div><h3>Haptic surgical sim for the da Vinci</h3><p class="mono muted">CHAI3D · Bullet · ROS · dVRK</p></div></a>
+          <a class="arc reveal" href="https://github.com/dpwivagg/imu_teleop" target="_blank" rel="noopener"><video class="arc__vid" style="background-image:url(assets/img/archive/imu.jpg)" muted loop playsinline preload="none" aria-label="IMU-driven robot arm teleoperation"><source src="assets/img/archive/imu.mp4" type="video/mp4"></video><div><h3>IMU teleoperation of a robot arm</h3><p class="mono muted">Arduino · ROS · Gazebo</p></div></a>
+          <a class="arc reveal" href="https://github.com/arpitg1304/RBE-549-Computer-Vision-Project" target="_blank" rel="noopener"><video class="arc__vid" style="background-image:url(assets/img/archive/vehicle_detect.jpg)" muted loop playsinline preload="none" aria-label="Vehicle detection bounding boxes on a highway"><source src="assets/img/archive/vehicle_detect.mp4" type="video/mp4"></video><div><h3>Real-time vehicle detection</h3><p class="mono muted">CNN · transfer learning · KITTI</p></div></a>
+          <a class="arc reveal" href="https://github.com/arpitg1304/a3c" target="_blank" rel="noopener"><video class="arc__vid" style="background-image:url(assets/img/archive/cart.jpg)" muted loop playsinline preload="none" aria-label="Cart-pole balancing"><source src="assets/img/archive/cart.mp4" type="video/mp4"></video><div><h3>Deep Q-learning on cart-pole</h3><p class="mono muted">TensorFlow · OpenAI Gym</p></div></a>
           <a class="arc reveal" href="https://github.com/arpitg1304/scene-recognition" target="_blank" rel="noopener"><img src="assets/img/archive/scene.jpg" alt="Scene recognition examples" loading="lazy"><div><h3>Scene recognition, bag of words</h3><p class="mono muted">MATLAB · SVM · kNN</p></div></a>
           <a class="arc reveal" href="https://github.com/arpitg1304/face-recognition" target="_blank" rel="noopener"><img src="assets/img/archive/eigenface.jpg" alt="Eigenfaces" loading="lazy"><div><h3>Eigenfaces &amp; Fisherfaces</h3><p class="mono muted">PCA via SVD · MATLAB</p></div></a>
         </div>
@@ -761,7 +761,7 @@
         <p class="section__lede">Robot software, perception, robot learning or the platform underneath, plus open-source collaboration and speaking.</p>
         <div class="contact__cta">
           <a class="btn btn--primary btn--lg" href="mailto:arpit.wpi@gmail.com">arpit.wpi@gmail.com</a>
-          <a class="btn btn--lg" href="https://www.linkedin.com/in/arpit-gupta-wpi/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn--lg" href="https://www.linkedin.com/in/arpitgupta/" target="_blank" rel="noopener">LinkedIn ↗</a>
           <a class="btn btn--lg" href="https://github.com/arpitg1304" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
