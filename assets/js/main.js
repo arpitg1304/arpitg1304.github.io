@@ -39,7 +39,7 @@
   // Active tab is set per page in the HTML (aria-current="page").
 
   /* ---------- Contact popup (built once, opened from any "Get in touch") ---------- */
-  const EMAIL = 'arpit.wpi@gmail.com';
+  const EMAIL = ['arpit.wpi', 'gmail.com'].join('@');   // assembled at runtime to deter scrapers
   const ICONS = {
     mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg>',
     linkedin: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5.5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0zM3.3 8.6h3.4V20H3.3zM9.2 8.6h3.26v1.56h.05c.45-.86 1.56-1.77 3.22-1.77 3.44 0 4.07 2.27 4.07 5.21V20h-3.4v-5.73c0-1.37-.02-3.13-1.9-3.13-1.91 0-2.2 1.49-2.2 3.03V20H9.2z"/></svg>',

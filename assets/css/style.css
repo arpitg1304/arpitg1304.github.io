@@ -908,3 +908,34 @@ input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border-radius
   .sys li { grid-template-columns: 30px 1fr 86px; }
   .trace li { grid-template-columns: 46px 1fr auto; }
 }
+
+/* Tablet: the third standard project card spans the row instead of leaving a gap */
+@media (min-width: 641px) and (max-width: 1080px) {
+  .card--tabwide { grid-column: 1 / -1; flex-direction: row; }
+  .card--tabwide .card__media { flex: 1.15; border-bottom: 0; border-right: 1px solid var(--line); }
+  .card--tabwide .card__body { flex: 1; padding: 30px; justify-content: center; }
+}
+
+/* Headshot on the landing hero */
+.landing__hero { justify-content: space-between; gap: clamp(28px, 3.5vw, 48px); }
+.landing__photo { flex: 0 0 auto; margin: 0; width: clamp(200px, 19vw, 280px); }
+.landing__photo img {
+  display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover;
+  border-radius: 22px; border: 1px solid var(--line-strong); background: var(--surface);
+  box-shadow: 0 18px 48px -24px rgba(17, 20, 26, .35);
+}
+@media (max-width: 900px) {
+  .landing__hero { flex-direction: column-reverse; align-items: flex-start; gap: 22px; }
+  .landing__photo { width: 112px; }
+  .landing__photo img { border-radius: 16px; }
+}
+@media (max-height: 760px) and (min-width: 901px) { .landing__photo { width: clamp(180px, 18vw, 240px); } }
+
+/* Short bio on the experience page */
+.bio { display: grid; grid-template-columns: 96px 1fr; gap: 24px; align-items: start; max-width: 860px; margin: 0 0 48px; }
+.bio img { width: 96px; height: 96px; border-radius: 14px; object-fit: cover; border: 1px solid var(--line-strong); }
+.bio p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.65; }
+.bio p b { color: var(--text); font-weight: 600; }
+@media (max-width: 640px) { .bio { grid-template-columns: 1fr; gap: 14px; } .bio img { width: 72px; height: 72px; } }
+
+.landing .hero__title .hl { white-space: nowrap; }
