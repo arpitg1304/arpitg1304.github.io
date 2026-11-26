@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Interests · Arpit Gupta</title>
-  <meta name="description" content="Agentic robotics, System 0/1/2 control stacks, data scaling for robot learning, embodied foundation models and learning from humans.">
+  <meta name="description" content="Agentic robotics (and rigloop, coming soon), System 0/1/2 control stacks, data scaling for robot learning, embodied foundation models and learning from humans.">
   <meta name="author" content="Arpit Gupta">
   <meta name="theme-color" content="#fafaf8">
   <link rel="canonical" href="https://arpitg1304.github.io/interests.html">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arpitg1304.github.io/interests.html">
   <meta property="og:title" content="Interests · Arpit Gupta">
-  <meta property="og:description" content="Agentic robotics, System 0/1/2 control stacks, data scaling for robot learning, embodied foundation models and learning from humans.">
+  <meta property="og:description" content="Agentic robotics (and rigloop, coming soon), System 0/1/2 control stacks, data scaling for robot learning, embodied foundation models and learning from humans.">
   <meta property="og:image" content="https://arpitg1304.github.io/assets/img/og.png">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261127">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261128">
 
   <script>
     // Apply saved theme before paint to avoid a flash.
@@ -107,6 +107,24 @@
               <li><span class="sys__n mono">S1</span><span class="sys__what"><b>See &amp; act</b><span>visuomotor policy (VLA)</span></span><span class="sys__bar"><i style="width:55%"></i></span><span class="sys__hz mono">~10–100 Hz</span></li>
               <li><span class="sys__n mono">S0</span><span class="sys__what"><b>React &amp; stabilize</b><span>low-level / whole-body control</span></span><span class="sys__bar"><i style="width:100%"></i></span><span class="sys__hz mono">~1 kHz</span></li>
             </ol>
+          </article>
+
+          <article class="int int--peek reveal" aria-labelledby="rigloopTitle">
+            <div class="peek__brand">
+              <span class="int__tag mono">Agentic robotics · coming soon</span>
+              <img class="peek__logo peek__logo--dark" src="assets/img/rigloop/wordmark-animated-dark.svg" alt="rigloop: a small robot gripper forms the r and lifts the dot of the i" width="800" height="300">
+              <img class="peek__logo peek__logo--light" src="assets/img/rigloop/wordmark-animated-light.svg" alt="" aria-hidden="true" width="800" height="300">
+            </div>
+            <div class="peek__body">
+              <h3 id="rigloopTitle">The agent harness for the physical world.</h3>
+              <p>A coding agent learns your robot arm, writes the program, rehearses it on a virtual copy of your rig, and runs it on the real arm only after you approve.</p>
+              <ul class="peek__list">
+                <li><b>Learns the rig first.</b> Finds the hardware, checks the cameras and records a versioned rig model.</li>
+                <li><b>Rehearses every run.</b> A virtual copy runs first, shown as a ghost arm over the real one.</li>
+                <li><b>Safety in the runtime.</b> Joint and speed limits, a table floor and an e-stop hold under any code. The model never sits in the control loop.</li>
+                <li><b>First alpha.</b> Onboards a LeRobot SO-101 from a one-line brief in about two minutes.</li>
+              </ul>
+            </div>
           </article>
 
           <article class="int reveal">

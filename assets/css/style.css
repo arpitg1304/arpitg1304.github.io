@@ -943,3 +943,22 @@ input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border-radius
 /* Concept illustrations swapped to <object> so they can pause off screen */
 object.concept { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; pointer-events: none; transition: transform .8s var(--ease); }
 .proj:hover .proj__media .concept, .card:hover .card__media .concept { transform: scale(1.025); }
+
+/* rigloop sneak peek on the interests page */
+.int--peek { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(200px, 300px) 1fr; gap: 20px 40px; align-items: center; }
+.peek__brand { display: flex; flex-direction: column; gap: 14px; }
+.peek__logo { width: 100%; max-width: 280px; height: auto; margin-left: -8px; }
+.peek__logo--light { display: none; }
+:root[data-theme="light"] .peek__logo--light { display: block; }
+:root[data-theme="light"] .peek__logo--dark { display: none; }
+.peek__body { display: flex; flex-direction: column; gap: 10px; }
+.peek__body h3 { font-size: 22px; }
+.peek__list { list-style: none; margin: 4px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
+.peek__list li { font-size: 14px; line-height: 1.55; color: var(--muted); padding-left: 14px; position: relative; }
+.peek__list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 2px; background: var(--accent); }
+.peek__list b { color: var(--text); font-weight: 600; }
+@media (max-width: 880px) {
+  .int--peek { grid-template-columns: 1fr; }
+  .peek__list { grid-template-columns: 1fr; }
+  .peek__logo { max-width: 220px; }
+}
