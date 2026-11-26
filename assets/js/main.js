@@ -249,6 +249,16 @@
     });
   }
 
+  /* ---------- Poster popup (research page) ---------- */
+  const posterBtn = $('#posterBtn'), posterDlg = $('#posterDlg');
+  if (posterBtn && posterDlg && typeof posterDlg.showModal === 'function') {
+    posterBtn.addEventListener('click', () => { posterDlg.showModal(); posterDlg.querySelector('h2')?.focus(); });
+    posterDlg.querySelector('.pdlg__x').addEventListener('click', () => posterDlg.close());
+    posterDlg.addEventListener('click', e => { if (e.target === posterDlg) posterDlg.close(); });   // backdrop
+  } else if (posterBtn) {
+    posterBtn.addEventListener('click', () => { window.location.href = 'assets/img/research/corl2026-poster.jpg'; });
+  }
+
   const yr = $('#year'); if (yr) yr.textContent = new Date().getFullYear();
 
 })();

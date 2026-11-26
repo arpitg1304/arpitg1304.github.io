@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261128">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261129">
 
   <script>
     // Apply saved theme before paint to avoid a flash.
@@ -84,7 +84,7 @@
 
         <article class="paper reveal">
           <div class="paper__main">
-            <div class="paper__venue"><span class="badge badge--accent">CoRL 2026</span><span class="mono muted">Conference on Robot Learning</span></div>
+            <div class="paper__venue"><span class="badge badge--accent">CoRL 2026</span><button class="badge badge--btn" type="button" id="posterBtn" aria-haspopup="dialog" aria-controls="posterDlg"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg>Poster</button><span class="mono muted">Conference on Robot Learning · Austin, TX · Nov 2026</span></div>
             <h3 class="paper__title">An Empirical Study of Data-Loading Bottlenecks (and Non-Bottlenecks) in Robotic Imitation Learning</h3>
             <p class="paper__authors">Mrinal Jain<sup>1</sup>, <strong>Arpit Gupta</strong><sup>2</sup>, Animesh Garg<sup>1</sup> <span class="muted">· <sup>1</sup>Georgia Tech &nbsp;<sup>2</sup>General Motors</span></p>
             <p class="paper__tldr"><span class="mono">TL;DR</span> Faster data loaders don't shorten robot-policy training. Unindexed video seeking does lengthen it. We profiled end-to-end LeRobot training (ACT, SmolVLA) against a Rust data engine we built to be as fast as possible. The loader turned out not to be the bottleneck.</p>
@@ -111,6 +111,7 @@
                (and Non-Bottlenecks) in Robotic Imitation Learning},
   author    = {Jain, Mrinal and Gupta, Arpit and Garg, Animesh},
   booktitle = {Conference on Robot Learning (CoRL)},
+  address   = {Austin, TX},
   year      = {2026},
   url       = {https://openreview.net/forum?id=Vv1WXMkSTD}
 }</code><button class="copy mono" data-copy="bib">copy</button></pre>
@@ -149,6 +150,17 @@
     <div class="wrap next-wrap"><a class="next" href="projects.html"><span class="mono">Next · 04</span><b>Projects</b><span class="next__blurb">Forge, ROS Time Machine, Robotics Agent Skills</span><span class="next__arrow" aria-hidden="true">→</span></a></div>
   </main>
 
+  <dialog class="pdlg" id="posterDlg" aria-labelledby="posterTitle">
+    <div class="pdlg__head">
+      <div><p class="cdlg__k mono">Poster · CoRL 2026 · Austin, TX</p><h2 id="posterTitle" tabindex="-1">Data-Loading Bottlenecks (and Non-Bottlenecks) in Robotic Imitation Learning</h2></div>
+      <div class="pdlg__actions">
+        <a class="btn btn--sm" href="assets/img/research/corl2026-poster.jpg" target="_blank" rel="noopener">Full size ↗</a>
+        <button class="icon-btn pdlg__x" type="button" aria-label="Close"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+    </div>
+    <img class="pdlg__img" src="assets/img/research/corl2026-poster.jpg" alt="CoRL 2026 poster: the question, how the data-path ratio r is measured, the Rust and Arrow data engine, findings that the data path is 1 to 3.5 percent of step time, that isolated speedups vanish end to end, that unindexed PyAV seeks hurt, that results hold for SmolVLA on an L40S, the Amdahl envelope, and three takeaways" width="3000" height="1468" loading="lazy">
+  </dialog>
+
   <footer class="footer">
     <div class="wrap footer__inner mono">
       <span>© <span id="year">2026</span> Arpit Gupta</span>
@@ -157,6 +169,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=20261127" defer></script>
+  <script src="assets/js/main.js?v=20261129" defer></script>
 </body>
 </html>
