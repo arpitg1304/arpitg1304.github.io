@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace">
+<style>
+
+.bar{transform-box:fill-box;transform-origin:left center;}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}.d4{animation-delay:.6s}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.idle{animation:id 2.4s ease-in-out infinite}
+@keyframes id{0%,100%{opacity:.65}50%{opacity:1}}
+
+@media (prefers-reduced-motion: reduce){ *{animation:none!important} }
+</style>
+<defs>
+<pattern id="gm" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#101722"/></pattern>
+<pattern id="gM" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="url(#gm)"/><path d="M100 0H0V100" fill="none" stroke="#151e2b"/></pattern>
+<radialGradient id="vg" cx="50%" cy="50%" r="72%"><stop offset="55%" stop-color="#05070a" stop-opacity="0"/><stop offset="100%" stop-color="#05070a" stop-opacity="0.6"/></radialGradient>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feComponentTransfer in="b" result="b2"><feFuncA type="linear" slope="0.55"/></feComponentTransfer><feMerge><feMergeNode in="b2"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+
+</defs>
+<rect width="800" height="500" fill="#0a0e14"/>
+<rect width="800" height="500" fill="url(#gM)"/>
+<rect width="800" height="500" fill="url(#vg)"/>
+<circle cx="27" cy="30" r="3" fill="#7aa2ff"/><text x="36" y="34" font-size="12" fill="#6b7a90">data-core-rs://step-time</text>
+<text x="40" y="88" font-size="24" fill="#d6dee8">Where a training step goes</text>
+<text x="40" y="112" font-size="13" fill="#6b7a90">steady-state step = compute path + data wait</text>
+<g font-size="13" fill="#6b7a90">
+<rect x="560" y="76" width="14" height="14" rx="3" fill="#4cc9f0"/><text x="582" y="88">compute (updt_s)</text>
+<rect x="560" y="100" width="14" height="14" rx="3" fill="#7aa2ff"/><text x="582" y="112">data wait (data_s)</text></g>
+<text x="772" y="136" font-size="12" fill="#6b7a90" text-anchor="end">r = data_s / updt_s</text>
+<line x1="40" y1="146" x2="760" y2="146" stroke="#2a3647"/>
+<line x1="577" y1="160" x2="577" y2="312" stroke="#6b7a90" stroke-dasharray="3 4" stroke-opacity=".7"/>
+<text x="583" y="326" font-size="12" fill="#6b7a90">5% threshold</text>
+<text x="40" y="186" font-size="15" fill="#d6dee8">torchcodec</text>
+<g class="bar d1"><rect x="262" y="167" width="300" height="26" rx="4" fill="#4cc9f0" fill-opacity=".85"/><rect x="561" y="167" width="4.3" height="26" rx="2" fill="#7aa2ff"/></g>
+<text x="772" y="186" font-size="16" fill="#d6dee8" text-anchor="end">r = 1.1%</text>
+<text x="40" y="242" font-size="15" fill="#7aa2ff">data-core (ours)</text>
+<g class="bar d2"><rect x="262" y="223" width="300" height="26" rx="4" fill="#4cc9f0" fill-opacity=".85"/><rect x="561" y="223" width="4.6" height="26" rx="2" fill="#7aa2ff"/></g>
+<text x="772" y="242" font-size="16" fill="#d6dee8" text-anchor="end">r = 1.2%</text>
+<text x="40" y="298" font-size="15" fill="#d6dee8">worst standard config</text>
+<g class="bar d3"><rect x="262" y="279" width="300" height="26" rx="4" fill="#4cc9f0" fill-opacity=".85"/><rect x="561" y="279" width="11.5" height="26" rx="2" fill="#7aa2ff"/></g>
+<text x="772" y="298" font-size="16" fill="#d6dee8" text-anchor="end">r = 3.5%</text>
+<line x1="40" y1="342" x2="760" y2="342" stroke="#2a3647" stroke-dasharray="4 6"/>
+<text x="40" y="402" font-size="15" fill="#d6dee8">PyAV + AV1 seek</text>
+<g class="bar d4"><rect x="262" y="383" width="300" height="26" rx="4" fill="#4cc9f0" fill-opacity=".85"/><rect class="idle" x="561" y="383" width="118" height="26" rx="3" fill="#7aa2ff" filter="url(#glow)"/><path d="M608 377L616 415M618 377L626 415" stroke="#0a0e14" stroke-width="5"/><path d="M608 377L616 415M618 377L626 415" stroke="#6b7a90" stroke-width="1.4"/></g>
+<text x="772" y="402" font-size="16" fill="#7aa2ff" text-anchor="end">r ≈ 488%</text>
+<text x="621" y="432" font-size="13" fill="#7aa2ff" text-anchor="middle">GPU idle ~83%</text>
+<text x="621" y="374" font-size="12" fill="#6b7a90" text-anchor="middle">data ≈ 4.9× compute</text>
+<text x="40" y="464" font-size="14" fill="#6b7a90">loader is <tspan fill="#d6dee8">≤3.5%</tspan> of step time in every standard config</text>
+</svg>
