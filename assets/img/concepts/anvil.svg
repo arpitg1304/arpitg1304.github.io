@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace">
 <title>Anvil: scene-consistency checks for robot data collection</title>
 <defs>
-<pattern id="gmin" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#101722" stroke-width="1"/></pattern>
-<pattern id="gmaj" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="url(#gmin)"/><path d="M100 0H0V100" fill="none" stroke="#151e2b" stroke-width="1"/></pattern>
+<pattern id="gmin" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#0d131b" stroke-width="1"/></pattern>
+<pattern id="gmaj" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="url(#gmin)"/><path d="M100 0H0V100" fill="none" stroke="#111823" stroke-width="1"/></pattern>
 <radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset="55%" stop-color="#05070a" stop-opacity="0"/><stop offset="100%" stop-color="#05070a" stop-opacity=".6"/></radialGradient>
 <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4cc9f0" stop-opacity="0"/><stop offset=".85" stop-color="#4cc9f0" stop-opacity=".18"/><stop offset="1" stop-color="#4cc9f0" stop-opacity=".7"/></linearGradient>
 <clipPath id="fr"><rect x="0" y="0" width="352" height="236" rx="10"/></clipPath>
@@ -27,11 +27,9 @@
 <g transform="translate(32 336)"><rect width="736" height="138" rx="10" fill="#0f1520" stroke="#2a3647" stroke-width="1.5"/>
 <circle cx="34" cy="29" r="11" fill="#34d399" fill-opacity=".14" stroke="#34d399" stroke-width="1.5"/><text x="34" y="34" font-size="14" fill="#34d399" text-anchor="middle" font-weight="700">✓</text>
 <text x="60" y="34" font-size="17" fill="#d6dee8">lighting</text>
-<text x="716" y="34" font-size="17" fill="#6b7a90" text-anchor="end">Δ 4%</text>
 <line x1="20" y1="50" x2="716" y2="50" stroke="#18222f"/>
 <circle cx="34" cy="67" r="11" fill="#34d399" fill-opacity=".14" stroke="#34d399" stroke-width="1.5"/><text x="34" y="72" font-size="14" fill="#34d399" text-anchor="middle" font-weight="700">✓</text>
 <text x="60" y="72" font-size="17" fill="#d6dee8">camera pose</text>
-<text x="716" y="72" font-size="17" fill="#6b7a90" text-anchor="end">ArUco ×4</text>
 <line x1="20" y1="88" x2="716" y2="88" stroke="#18222f"/>
 <circle cx="34" cy="105" r="11" fill="#f43f5e" fill-opacity=".14" stroke="#f43f5e" stroke-width="1.5"/><text x="34" y="110" font-size="14" fill="#f43f5e" text-anchor="middle" font-weight="700">✗</text>
 <text x="60" y="110" font-size="17" fill="#d6dee8">objects</text>

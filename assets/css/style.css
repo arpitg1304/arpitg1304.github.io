@@ -939,3 +939,7 @@ input[type="range"]::-moz-range-thumb { width: 14px; height: 14px; border-radius
 @media (max-width: 640px) { .bio { grid-template-columns: 1fr; gap: 14px; } .bio img { width: 72px; height: 72px; } }
 
 .landing .hero__title .hl { white-space: nowrap; }
+
+/* Concept illustrations swapped to <object> so they can pause off screen */
+object.concept { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; pointer-events: none; transition: transform .8s var(--ease); }
+.proj:hover .proj__media .concept, .card:hover .card__media .concept { transform: scale(1.025); }

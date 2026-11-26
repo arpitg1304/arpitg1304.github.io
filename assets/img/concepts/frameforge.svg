@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace">
 <title>frameforge: episode-aware, fork-safe video clip loading</title>
 <defs>
-<pattern id="gmin" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#101722" stroke-width="1"/></pattern>
-<pattern id="gmaj" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="url(#gmin)"/><path d="M100 0H0V100" fill="none" stroke="#151e2b" stroke-width="1"/></pattern>
+<pattern id="gmin" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#0d131b" stroke-width="1"/></pattern>
+<pattern id="gmaj" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="url(#gmin)"/><path d="M100 0H0V100" fill="none" stroke="#111823" stroke-width="1"/></pattern>
 <radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset="55%" stop-color="#05070a" stop-opacity="0"/><stop offset="100%" stop-color="#05070a" stop-opacity=".6"/></radialGradient>
 <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 <g id="clip"><rect x="-22" y="-10" width="44" height="20" rx="4" fill="#0f1520" stroke="#4cc9f0" stroke-width="1.5"/><rect x="-17" y="-5" width="7" height="10" rx="1" fill="#4cc9f0" fill-opacity=".55"/><rect x="-8" y="-5" width="7" height="10" rx="1" fill="#4cc9f0" fill-opacity=".45"/><rect x="1" y="-5" width="7" height="10" rx="1" fill="#4cc9f0" fill-opacity=".35"/><rect x="10" y="-5" width="7" height="10" rx="1" fill="#4cc9f0" fill-opacity=".25"/></g>
@@ -18,6 +18,7 @@
 </style>
 <rect width="800" height="500" fill="#0a0e14"/>
 <rect width="800" height="500" fill="url(#gmaj)"/>
+<g transform="translate(0 30)">
 
 <rect x="30" y="86" width="740" height="100" rx="8" fill="#0d131c" stroke="#2a3647" stroke-width="1.5"/>
 <rect x="42" y="92" width="6" height="6" rx="1.5" fill="#1b2433"/><rect x="42" y="174" width="6" height="6" rx="1.5" fill="#1b2433"/>
@@ -240,11 +241,6 @@
 <g transform="translate(624 288.0)"><rect width="146" height="68" rx="10" fill="#0f1520" stroke="#34d399" stroke-opacity=".7" stroke-width="1.5"/><text x="73" y="29" text-anchor="middle" font-size="15" fill="#34d399" font-weight="600">fork-safe ✓</text><text x="73" y="50" text-anchor="middle" font-size="13" fill="#6b7a90">num_workers=4</text></g>
 <path d="M96 186 V244" stroke="#2a3647" stroke-width="1.5" stroke-dasharray="4 6"/>
 <circle r="3.5" fill="#4cc9f0"><animateMotion path="M96 186 V244" dur="1.6s" repeatCount="indefinite"/></circle>
-<g transform="translate(40 426)">
-<rect width="400" height="44" rx="10" fill="#0f1520" stroke="#2a3647" stroke-width="1.5"/>
-<text x="20" y="28" font-size="16" fill="#d6dee8"><tspan fill="#4cc9f0" font-weight="600">2 TB</tspan> video</text>
-<text x="160" y="28" font-size="15" fill="#6b7a90">vs</text>
-<g opacity=".7"><text x="206" y="28" font-size="16" fill="#6b7a90">18 TB JPEG</text><line x1="202" y1="22" x2="312" y2="22" stroke="#f43f5e" stroke-width="2"/></g>
 </g>
 <circle cx="27" cy="30" r="3" fill="#7aa2ff"/><text x="36" y="34" font-size="12" fill="#6b7a90">frameforge://clips</text>
 <rect width="800" height="500" fill="url(#vig)" pointer-events="none"/>

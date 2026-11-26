@@ -210,6 +210,45 @@
     vids.forEach(v => vio.observe(v));
   }
 
+  /* ---------- Concept illustrations: animate only while on screen ---------- */
+  // <img> SVGs can't be paused, so each is swapped for an <object> whose SMIL and CSS
+  // animations are paused off screen (and kept paused under reduced motion).
+  const concepts = $$('img[src*="assets/img/concepts/"]');
+  if (concepts.length && 'IntersectionObserver' in window) {
+    const setPlay = (obj, on) => {
+      let d = null; try { d = obj.contentDocument; } catch (e) {}
+      const svg = d && d.documentElement;
+      if (!svg || typeof svg.pauseAnimations !== 'function') return;   // not loaded or not accessible: leave it running
+      const pz = d.getElementById('__pz');
+      if (on) {
+        svg.unpauseAnimations();
+        if (pz) pz.parentNode.removeChild(pz);
+      } else {
+        svg.pauseAnimations();
+        if (!pz) {
+          const st = d.createElementNS('http://www.w3.org/2000/svg', 'style');
+          st.id = '__pz'; st.textContent = '*{animation-play-state:paused!important}';
+          svg.appendChild(st);
+        }
+      }
+    };
+    const cio = new IntersectionObserver(es => es.forEach(e => {
+      e.target._vis = e.isIntersecting;
+      setPlay(e.target, e.isIntersecting && !reduceMotion);
+    }), { threshold: 0.25 });
+    concepts.forEach(img => {
+      const obj = document.createElement('object');
+      obj.type = 'image/svg+xml';
+      obj.data = img.getAttribute('src');
+      obj.className = 'concept';
+      obj.setAttribute('role', 'img');
+      obj.setAttribute('aria-label', img.alt);
+      obj.addEventListener('load', () => setPlay(obj, !!obj._vis && !reduceMotion));
+      img.replaceWith(obj);
+      cio.observe(obj);
+    });
+  }
+
   const yr = $('#year'); if (yr) yr.textContent = new Date().getFullYear();
 
 })();

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace">
+<defs>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1" fill="#141c28"/></pattern>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+
+</defs>
+<style>
+text{font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace}
+
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<rect width="800" height="500" fill="#0a0e14"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<path d="M480 340 C 560 340, 600 180, 700 160" fill="none" stroke="#7aa2ff" stroke-width="6" opacity=".35" filter="url(#glow)"/>
+<path d="M480 340 C 560 340, 600 180, 700 160" fill="none" stroke="#7aa2ff" stroke-width="2.2" stroke-linecap="round"/>
+<path id="f0" d="M198.9 332.3 L480.0 340.0" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="198.9" cy="332.3" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.10;0.70;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f0"/></animateMotion></circle>
+<path id="f1" d="M111.8 325.9 L497.8 337.3" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="111.8" cy="325.9" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.12;0.72;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f1"/></animateMotion></circle>
+<path id="f2" d="M183.2 305.7 L514.4 329.7" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="183.2" cy="305.7" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.14;0.74;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f2"/></animateMotion></circle>
+<path id="f3" d="M161.8 276.8 L530.2 318.1" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="161.8" cy="276.8" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.16;0.76;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f3"/></animateMotion></circle>
+<path id="f4" d="M216.2 274.1 L545.4 303.3" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="216.2" cy="274.1" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.18;0.78;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f4"/></animateMotion></circle>
+<path id="f5" d="M143.3 264.3 L560.2 286.1" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="143.3" cy="264.3" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.10;0.70;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f5"/></animateMotion></circle>
+<path id="f6" d="M227.1 250.0 L575.0 267.2" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="227.1" cy="250.0" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.12;0.72;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f6"/></animateMotion></circle>
+<path id="f7" d="M231.2 249.3 L590.1 247.7" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="231.2" cy="249.3" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.14;0.74;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f7"/></animateMotion></circle>
+<path id="f8" d="M249.4 248.8 L605.6 228.1" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="249.4" cy="248.8" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.16;0.76;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f8"/></animateMotion></circle>
+<path id="f9" d="M146.3 199.2 L621.8 209.5" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="146.3" cy="199.2" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.18;0.78;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f9"/></animateMotion></circle>
+<path id="f10" d="M199.5 181.6 L639.1 192.5" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="199.5" cy="181.6" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.10;0.70;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f10"/></animateMotion></circle>
+<path id="f11" d="M197.6 163.8 L657.7 178.1" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="197.6" cy="163.8" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.12;0.72;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f11"/></animateMotion></circle>
+<path id="f12" d="M204.0 163.4 L677.9 167.0" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="204.0" cy="163.4" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.14;0.74;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f12"/></animateMotion></circle>
+<path id="f13" d="M152.2 156.5 L700.0 160.0" fill="none" stroke="#1d2735" stroke-width="1"/>
+<circle cx="152.2" cy="156.5" r="2.5" fill="#33425a"/>
+<circle r="3.5" fill="#4cc9f0"><animateMotion dur="4.0s" begin="0s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.16;0.76;1" calcMode="spline" keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1"><mpath href="#f13"/></animateMotion></circle>
+<text x="175" y="400" font-size="13" fill="#6b7a90" text-anchor="middle">noise</text>
+<text x="590" y="400" font-size="13" fill="#7aa2ff" text-anchor="middle">action trajectory</text>
+<text x="80" y="92" font-size="13" fill="#6b7a90" text-anchor="start">flow matching</text>
+</svg>

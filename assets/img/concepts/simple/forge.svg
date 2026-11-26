@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace">
+<defs>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1" fill="#141c28"/></pattern>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+
+</defs>
+<style>
+text{font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace}
+.spin{transform-origin:400px 250px;animation:spin 18s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<rect width="800" height="500" fill="#0a0e14"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<path id="r0" d="M168 130 C 270 130, 290 250, 348 250" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="164" cy="130" r="3" fill="#6b7a90"/>
+<text x="152" y="135" font-size="14" fill="#d6dee8" text-anchor="end">RLDS</text>
+<path id="r1" d="M168 178 C 270 178, 290 250, 348 250" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="164" cy="178" r="3" fill="#6b7a90"/>
+<text x="152" y="183" font-size="14" fill="#d6dee8" text-anchor="end">LeRobot</text>
+<path id="r2" d="M168 226 C 270 226, 290 250, 348 250" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="164" cy="226" r="3" fill="#6b7a90"/>
+<text x="152" y="231" font-size="14" fill="#d6dee8" text-anchor="end">HDF5</text>
+<path id="r3" d="M168 274 C 270 274, 290 250, 348 250" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="164" cy="274" r="3" fill="#6b7a90"/>
+<text x="152" y="279" font-size="14" fill="#d6dee8" text-anchor="end">Zarr</text>
+<path id="r4" d="M168 322 C 270 322, 290 250, 348 250" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="164" cy="322" r="3" fill="#6b7a90"/>
+<text x="152" y="327" font-size="14" fill="#d6dee8" text-anchor="end">MCAP</text>
+<path id="r5" d="M168 370 C 270 370, 290 250, 348 250" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="164" cy="370" r="3" fill="#6b7a90"/>
+<text x="152" y="375" font-size="14" fill="#d6dee8" text-anchor="end">rosbag</text>
+<path id="w0" d="M452 250 C 510 250, 530 178, 632 178" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="636" cy="178" r="3" fill="#6b7a90"/>
+<text x="648" y="183" font-size="14" fill="#d6dee8" text-anchor="start">LeRobot v3</text>
+<path id="w1" d="M452 250 C 510 250, 530 226, 632 226" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="636" cy="226" r="3" fill="#6b7a90"/>
+<text x="648" y="231" font-size="14" fill="#d6dee8" text-anchor="start">RLDS</text>
+<path id="w2" d="M452 250 C 510 250, 530 274, 632 274" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="636" cy="274" r="3" fill="#6b7a90"/>
+<text x="648" y="279" font-size="14" fill="#d6dee8" text-anchor="start">MCAP</text>
+<path id="w3" d="M452 250 C 510 250, 530 322, 632 322" fill="none" stroke="#2a3647" stroke-width="1.5"/>
+<circle cx="636" cy="322" r="3" fill="#6b7a90"/>
+<text x="648" y="327" font-size="14" fill="#d6dee8" text-anchor="start">RoboDM</text>
+<circle cx="400" cy="250" r="52" fill="none" stroke="#7aa2ff" stroke-width="6" opacity=".45" filter="url(#glow)"/>
+<circle cx="400" cy="250" r="52" fill="#0f1520" stroke="#7aa2ff" stroke-width="1.8"/>
+<circle class="spin" cx="400" cy="250" r="40" fill="none" stroke="#7aa2ff" stroke-width="1" stroke-dasharray="2 8" opacity=".6"/>
+<text x="400" y="255" font-size="15" fill="#d6dee8" text-anchor="middle">Episode</text>
+<text x="152" y="92" font-size="13" fill="#6b7a90" text-anchor="end">reads</text>
+<text x="648" y="140" font-size="13" fill="#6b7a90" text-anchor="start">writes</text>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="0.0s" repeatCount="indefinite"><mpath href="#r0"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-0.43s" repeatCount="indefinite"><mpath href="#r1"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-0.43s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-0.86s" repeatCount="indefinite"><mpath href="#r2"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-0.86s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-1.29s" repeatCount="indefinite"><mpath href="#r3"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-1.29s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-1.72s" repeatCount="indefinite"><mpath href="#r4"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-1.72s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-2.15s" repeatCount="indefinite"><mpath href="#r5"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-2.15s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-0.3s" repeatCount="indefinite"><mpath href="#w0"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-0.3s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-0.95s" repeatCount="indefinite"><mpath href="#w1"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-0.95s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-1.6s" repeatCount="indefinite"><mpath href="#w2"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-1.6s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="2.6s" begin="-2.25s" repeatCount="indefinite"><mpath href="#w3"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="2.6s" begin="-2.25s" repeatCount="indefinite"/></circle>
+</svg>

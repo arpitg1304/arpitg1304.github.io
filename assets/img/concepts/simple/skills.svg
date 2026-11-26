@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace">
+<defs>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1" fill="#141c28"/></pattern>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+
+</defs>
+<style>
+text{font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace}
+.ln{transform-box:fill-box;transform-origin:left center;animation:type 6s ease-out infinite}@keyframes type{0%{transform:scaleX(0)}12%,92%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}.ok{opacity:0;animation:ok 6s ease-out infinite}@keyframes ok{0%,45%{opacity:0}55%,92%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<rect width="800" height="500" fill="#0a0e14"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<rect x="96" y="150" width="190" height="128" rx="10" fill="#0f1520" stroke="#2a3647" stroke-width="1.5"/>
+<rect x="114" y="172" width="190" height="128" rx="10" fill="#0f1520" stroke="#2a3647" stroke-width="1.5"/>
+<rect x="132" y="194" width="190" height="128" rx="10" fill="#0f1520" stroke="#7aa2ff" stroke-width="1.5"/>
+<text x="150" y="224" font-size="14" fill="#d6dee8" text-anchor="start">ros2 / SKILL.md</text>
+<rect x="150" y="244" width="140" height="4" rx="2" fill="#2a3647"/>
+<rect x="150" y="260" width="112" height="4" rx="2" fill="#2a3647"/>
+<rect x="150" y="276" width="128" height="4" rx="2" fill="#2a3647"/>
+<rect x="150" y="292" width="90" height="4" rx="2" fill="#2a3647"/>
+<text x="132" y="380" font-size="13" fill="#6b7a90" text-anchor="start">skills</text>
+<path id="p0" d="M330 252 H 440" fill="none" stroke="#2a3647" stroke-width="1.5" stroke-dasharray="4 6"/>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="1.8s" begin="0s" repeatCount="indefinite"><mpath href="#p0"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="0s" repeatCount="indefinite"/></circle>
+<circle r="3.5" fill="#4cc9f0" opacity="0"><animateMotion dur="1.8s" begin="-0.9s" repeatCount="indefinite"><mpath href="#p0"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="-0.9s" repeatCount="indefinite"/></circle>
+<rect x="456" y="140" width="260" height="224" rx="10" fill="#0f1520" stroke="#2a3647" stroke-width="1.5"/>
+<rect class="ln" style="animation-delay:0.00s" x="480" y="170" width="120" height="5" rx="2.5" fill="#a78bfa" opacity=".85"/>
+<rect class="ln" style="animation-delay:0.35s" x="464" y="192" width="150" height="5" rx="2.5" fill="#6b7a90" opacity=".85"/>
+<rect class="ln" style="animation-delay:0.70s" x="464" y="214" width="176" height="5" rx="2.5" fill="#6b7a90" opacity=".85"/>
+<rect class="ln" style="animation-delay:1.05s" x="480" y="236" width="96" height="5" rx="2.5" fill="#a78bfa" opacity=".85"/>
+<rect class="ln" style="animation-delay:1.40s" x="464" y="258" width="160" height="5" rx="2.5" fill="#6b7a90" opacity=".85"/>
+<rect class="ln" style="animation-delay:1.75s" x="464" y="280" width="132" height="5" rx="2.5" fill="#6b7a90" opacity=".85"/>
+<rect class="ln" style="animation-delay:2.10s" x="464" y="302" width="112" height="5" rx="2.5" fill="#6b7a90" opacity=".85"/>
+<g class="ok"><circle cx="684" cy="336" r="11" fill="none" stroke="#34d399" stroke-width="1.8"/><path d="M678 336 l4 4 8 -9" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="456" y="392" font-size="13" fill="#6b7a90" text-anchor="start">ROS 2 node with tests</text>
+</svg>

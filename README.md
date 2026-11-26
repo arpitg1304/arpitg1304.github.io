@@ -15,7 +15,7 @@ flywheel.html           system overview (linked from the footer)
 assets/css/style.css    design tokens (light/dark) and components
 assets/js/main.js       nav, theme, contact dialog, filters, live GitHub stars, calculator
 assets/js/flywheel.js   system overview animation
-assets/img/concepts/    animated SVG illustration per project (see STYLE.md there)
+assets/img/concepts/    animated SVG illustration per project (see STYLE.md; simpler alternates in simple/)
 assets/img/archive/     graduate-school project stills and clips
 ```
 

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace">
+<defs>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1" fill="#141c28"/></pattern>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+
+</defs>
+<style>
+text{font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace}
+.drift{animation:drift 5s ease-in-out infinite}@keyframes drift{0%,20%{transform:translateX(0)}45%,90%{transform:translateX(30px)}100%{transform:translateX(0)}}.flag{opacity:0;animation:flag 5s ease-in-out infinite}@keyframes flag{0%,45%{opacity:0}55%,90%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<rect width="800" height="500" fill="#0a0e14"/>
+<rect width="800" height="500" fill="url(#dots)"/>
+<line x1="120" y1="360" x2="560" y2="360" stroke="#2a3647" stroke-width="2"/>
+<rect x="318" y="96" width="44" height="26" rx="6" fill="#0f1520" stroke="#6b7a90" stroke-width="1.5"/><circle cx="340" cy="109" r="6" fill="none" stroke="#6b7a90" stroke-width="1.5"/>
+<path d="M322 124 L200 352 M358 124 L480 352" stroke="#2a3647" stroke-width="1" stroke-dasharray="3 6"/>
+<rect x="276" y="300" width="128" height="60" rx="6" fill="none" stroke="#6b7a90" stroke-width="1.5" stroke-dasharray="4 5"/>
+<g class="drift"><rect x="276" y="300" width="128" height="60" rx="6" fill="none" stroke="#7aa2ff" stroke-width="1.8"/><circle cx="298" cy="318" r="7" fill="none" stroke="#7aa2ff" stroke-width="1.5"/><circle cx="326" cy="318" r="7" fill="none" stroke="#7aa2ff" stroke-width="1.5"/><circle cx="354" cy="318" r="7" fill="none" stroke="#7aa2ff" stroke-width="1.5"/><circle cx="382" cy="318" r="7" fill="none" stroke="#7aa2ff" stroke-width="1.5"/></g>
+<text x="340" y="392" font-size="13" fill="#6b7a90" text-anchor="middle">reference position</text>
+<g class="flag"><text x="370" y="284" font-size="13" fill="#f43f5e" text-anchor="middle">rack moved</text></g>
+<g><path d="M612 196 l4 4 8 -9" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="636" y="201" font-size="14" fill="#d6dee8" text-anchor="start">camera pose</text></g>
+<g><path d="M612 240 l4 4 8 -9" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="636" y="245" font-size="14" fill="#d6dee8" text-anchor="start">lighting</text></g>
+<g class="flag"><path d="M612 279 l9 9 M621 279 l-9 9" stroke="#f43f5e" stroke-width="2" stroke-linecap="round"/><text x="636" y="289" font-size="14" fill="#d6dee8" text-anchor="start">fixtures</text></g>
+<text x="612" y="160" font-size="13" fill="#6b7a90" text-anchor="start">session check</text>
+</svg>
