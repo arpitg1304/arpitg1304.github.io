@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261130">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261132">
 
   <script>
     // Apply saved theme before paint to avoid a flash.
@@ -83,14 +83,6 @@
           <p class="section__lede">Each tool addresses a problem I encountered building robots at 6 River Systems, Fetch Robotics and Boston Dynamics, and is released for use by other robotics teams. <span class="muted mono small">★ <span id="starTotal">620</span>+ across repos</span></p>
         </header>
 
-        <div class="filters reveal" role="group" aria-label="Filter projects">
-          <button class="chip is-on" data-filter="all">All</button>
-          <button class="chip" data-filter="ros">ROS &amp; robot software</button>
-          <button class="chip" data-filter="data">Robot learning data</button>
-          <button class="chip" data-filter="sim">Sim &amp; visual</button>
-          <button class="chip" data-filter="ai">AI agents &amp; tools</button>
-        </div>
-
         <div class="projects">
           <!-- Featured -->
           <article class="proj proj--feature reveal" id="p-forge" data-tags="data">
@@ -99,7 +91,7 @@
             </a>
             <div class="proj__body">
               <div class="proj__meta"><span class="mono">Python · PyPI</span><span class="stars" data-repo="forge">★ 184</span></div>
-              <h3>Forge</h3>
+              <h3>Forge</h3><div class="proj__badges"><span class="pill">Robot learning data</span></div>
               <p class="proj__tag">Format conversion, quality scoring and cataloging for robot learning datasets.</p>
               <p>Reads nine robot learning formats (LeRobot v2 and v3, RLDS, MCAP, RoboDM, GR00T, HDF5, Zarr and rosbag) and writes LeRobot v3, RLDS, MCAP and RoboDM through a shared <code>Episode/Frame</code> representation, so each new reader works with every writer. Scores episodes on proprioceptive quality metrics (LDLJ smoothness, dead actions, gripper chatter) and registers them in a DuckDB catalog that supports SQL queries, SigLIP semantic search and deduplication.</p>
               <pre class="term mono"><span class="muted">$</span> pip install forge-robotics
@@ -118,7 +110,7 @@
             </a>
             <div class="proj__body">
               <div class="proj__meta"><span class="mono">SKILL.md · ROS1 / ROS2</span><span class="stars" data-repo="robotics-agent-skills">★ 401</span></div>
-              <h3>Robotics Agent Skills</h3>
+              <h3>Robotics Agent Skills</h3><div class="proj__badges"><span class="pill">Robot software</span><span class="pill">AI agents</span></div>
               <p class="proj__tag">Production robotics practices for AI coding agents.</p>
               <p>General-purpose coding agents know ROS syntax but often miss production requirements: QoS compatibility, deterministic startup, bounded callbacks, sensor health and safe shutdown. Ten skills covering ROS 2, perception, testing, bringup, Docker, security and design patterns, for Claude Code, Cursor, Copilot and any agent that reads SKILL.md files.</p>
               <div class="proj__links">
@@ -134,7 +126,7 @@
             </a>
             <div class="proj__body">
               <div class="proj__meta"><span class="mono">C++17 · ROS 2 Jazzy · MCAP</span><span class="stars" data-repo="ros-time-machine">★ 23</span></div>
-              <h3>ROS Time Machine</h3>
+              <h3>ROS Time Machine</h3><div class="proj__badges"><span class="pill">Robot software</span><span class="pill">Robot learning data</span><span class="pill">AI agents</span></div>
               <p class="proj__tag">Event-triggered data recording for ROS 2.</p>
               <p>Keeps a rolling in-memory buffer of every topic. When a trigger fires, it writes the pre-event buffer and the live post-event recording to a single MCAP file. <strong>Version 2 adds semantic triggers:</strong> events described in plain language ("the cup falls from the gripper") are detected by a vision-language model sampling the cameras at 1 Hz. Each clip is anchored to the time of the event, not the time of detection, so model latency does not cost pre-event data. On 45 replayed SO-101 policy rollouts, it detected 44 of 46 labeled events.</p>
               <div class="proj__links">
@@ -150,7 +142,7 @@
               <a class="card__media" href="https://github.com/arpitg1304/tessera" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/tessera.svg?v=3" alt="Concept: clustered episode embeddings with diverse picks ringed across every cluster" loading="lazy" width="800" height="500"></a>
               <div class="card__body">
                 <div class="proj__meta"><span class="mono">TypeScript · FastAPI</span><span class="stars" data-repo="tessera">★ 9</span></div>
-                <h3>Tessera</h3>
+                <h3>Tessera</h3><div class="proj__badges"><span class="pill">Robot learning data</span></div>
                 <p>Visualizes episode embeddings in UMAP space with animated previews, and selects diverse training subsets using k-means or stratified sampling.</p>
                 <div class="proj__links"><a href="https://github.com/arpitg1304/tessera" target="_blank" rel="noopener">GitHub ↗</a></div>
               </div>
@@ -160,7 +152,7 @@
               <a class="card__media" href="https://github.com/arpitg1304/anvil" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/anvil.svg?v=3" alt="Concept: a pinned reference scene beside today's session, with the moved rack flagged as drift while camera pose and lighting pass" loading="lazy" width="800" height="500"></a>
               <div class="card__body">
                 <div class="proj__meta"><span class="mono">GroundingDINO · DINOv3</span><span class="badge">v0.1 · active</span></div>
-                <h3>Anvil</h3>
+                <h3>Anvil</h3><div class="proj__badges"><span class="pill">Robot learning data</span></div>
                 <p>Compares each data collection session against a pinned reference scene, and flags lighting changes, moved fixtures and camera drift before they degrade policy performance.</p>
                 <div class="proj__links"><a href="https://github.com/arpitg1304/anvil" target="_blank" rel="noopener">GitHub ↗</a></div>
               </div>
@@ -170,7 +162,7 @@
               <a class="card__media" href="https://arpitg1304.github.io/armature/" target="_blank" rel="noopener" tabindex="-1"><img src="assets/img/concepts/armature.svg?v=3" alt="Concept: a robot arm in a kitting workcell picks parts into a kit while a demonstration is recorded" loading="lazy" width="800" height="500"></a>
               <div class="card__body">
                 <div class="proj__meta"><span class="mono">WebGL · in-browser</span><span class="stars" data-repo="armature">★ 2</span></div>
-                <h3>Armature</h3>
+                <h3>Armature</h3><div class="proj__badges"><span class="pill">Simulation</span></div>
                 <p>A browser-based robotics studio. Build a scene, select a Franka Panda, SO-101, UR5e or xArm 6, record demonstrations and export them in LeRobot v3 format, from a single self-contained HTML page.</p>
                 <div class="proj__links"><a href="https://arpitg1304.github.io/armature/" target="_blank" rel="noopener">Launch ↗</a><a href="https://github.com/arpitg1304/armature" target="_blank" rel="noopener">GitHub ↗</a></div>
               </div>
@@ -211,6 +203,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=20261130" defer></script>
+  <script src="assets/js/main.js?v=20261132" defer></script>
 </body>
 </html>

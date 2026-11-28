@@ -105,18 +105,6 @@
     revealer.observe(el);
   });
 
-  /* ---------- Project filters ---------- */
-  const filterBtns = $$('.filters .chip');
-  filterBtns.forEach(btn => btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.toggle('is-on', b === btn));
-    const f = btn.dataset.filter;
-    $$('#projects [data-tags]').forEach(el => {
-      const show = f === 'all' || el.dataset.tags.split(' ').includes(f);
-      el.classList.toggle('is-hidden', !show);
-      if (show) el.classList.add('is-in');
-    });
-  }));
-
   /* ---------- Live GitHub stars (graceful fallback to static numbers) ---------- */
   (async () => {
     const KEY = 'gh-stars-v1';

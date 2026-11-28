@@ -981,3 +981,8 @@ object.concept { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5;
 .pdlg__x svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
 .pdlg__img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); background: #fff; }
 @media (max-width: 640px) { .pdlg { padding: 14px; } .pdlg__head h2 { font-size: 15px; } .pdlg__actions .btn { display: none; } }
+
+/* Category badges on project cards */
+.proj__badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 14px; }
+.card .proj__badges { margin-top: -2px; }
+.proj__badges .pill { margin: 0; font: 500 11.5px/1 var(--f-mono); padding: 5px 9px; }
